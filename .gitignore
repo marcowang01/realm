@@ -1,0 +1,19 @@
+# This is a sample .gitignore file for a Python project in PyCharm
+# Ignore compiled Python files
+*.pyc
+
+# Ignore PyCharm project files
+/.idea
+
+# Ignore virtual environment
+/venv
+
+# Ignore any local build artifacts
+/build
+
+# Ignore any logs or backups
+*.log
+*.bak
+
+# Ignore any cache directories
+__pycache__/ 
