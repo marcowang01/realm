@@ -88,7 +88,7 @@ export default function Home() {
         const doc_logs = docs['documents'].map((doc: string) => doc.slice(0, 100) + ',')
         setLogs(doc_logs)
       } else {
-        log(`get [${name}] collection failed`)
+        log(`peek [${name}] collection failed`)
       }
     } catch (err) {
       log(`Error: ${err}`)

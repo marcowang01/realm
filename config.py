@@ -24,3 +24,6 @@ ZIP_FILE = pathlib.Path(CACHE_DIR, S3_KEY)
 
 # Location of web frontend assets.
 ASSETS_PATH = pathlib.Path(__file__).parent / "frontend" / "dist"
+
+# chunks of instructions to send to openai
+CHUNK_SIZE = 1000
