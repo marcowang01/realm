@@ -31,13 +31,14 @@ app_image = (
         "chromadb",
         "langchain",
         "openai",
+        "boto3",
     )
 )
 
 stub = Stub(
     "instructdb",
     image=app_image,
-    secrets=[Secret.from_name("mw01-openai-secret")],
+    secrets=[Secret.from_name("mw01-openai-secret"), Secret.from_name("mw01-aws-secret")],
 )
 
 # deploys the frontend static files and also the fast API server
@@ -126,6 +127,10 @@ def add_to_collection(name, documents):
     import chromadb
     from chromadb.config import Settings
     from chromadb.utils import embedding_functions
+    import boto3
+    import zipfile
+    import traceback
+    import os
 
     chroma_dir = str(config.CHROMA_DIR)
     client = chromadb.Client(Settings(
@@ -138,19 +143,48 @@ def add_to_collection(name, documents):
         model_name="text-embedding-ada-002"
     )
     try:
+        # add new documents to collection inside shared volume
         collection = client.get_collection(
             name=name,
             embedding_function=openai_ef,
         )
         logger.info(f"adding to collection {name}...")
-        collection.add(
-            documents=[str(doc) for doc in documents],
-            metadatas=[{"source": "alpaca"} for i in range(len(documents))],
-            ids=[f'id{i}' for i in range(len(documents))]
-        )
+        # collection.add(
+        #     documents=[str(doc) for doc in documents],
+        #     metadatas=[{"source": "alpaca"} for i in range(len(documents))],
+        #     ids=[f'id{i}' for i in range(len(documents))]
+        # )
+        logger.info(f"added to collection {name} locally")
+        
+        # delete all files and directories from S3 bucket before uploading new files
+        s3 = boto3.client('s3')
+        bucket_name = os.environ["BUCKET_NAME"]
+        response = s3.list_objects_v2(Bucket=bucket_name)
+        if 'Contents' in response:
+            delete_keys = [{'Key': k['Key']} for k in response['Contents']]
+            s3.delete_objects(Bucket=bucket_name, Delete={'Objects': delete_keys})
+            logger.info(f"deleted all files and directories from {bucket_name} bucket")
+
+        zip_file = config.ZIP_FILE
+        # create a zip file of CHROMA_DIR
+        with zipfile.ZipFile(zip_file, 'w', zipfile.ZIP_DEFLATED) as zip:
+            for root, dirs, files in os.walk(chroma_dir):
+                for file in files:
+                    zip.write(os.path.join(root, file))
+
+        # upload zip file to S3 bucket
+        with open(zip_file, "rb") as f:
+            # fileobj, bucket, key
+            s3.upload_fileobj(f, bucket_name, config.S3_KEY)
+            logger.info(f"{zip_file} has been uploaded to {bucket_name} bucket.")
+
+        # config.CHROMA_DIR.mkdir(parents=True, exist_ok=True)
+        # config.INDEX_DIR.mkdir(parents=True, exist_ok=True)
+
         return collection.name
     except Exception as e:
         logger.error(f"error adding to collection: {e}")
+        logger.error(traceback.format_exc())
         return "error: {e}"
 
 # delete the collection by name

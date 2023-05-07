@@ -18,5 +18,9 @@ CACHE_DIR = "/cache"
 
 # Location of chroma persist directory.
 CHROMA_DIR = pathlib.Path(CACHE_DIR, "chroma")
+INDEX_DIR = pathlib.Path(CHROMA_DIR, "index")
+S3_KEY = "chroma.zip"
+ZIP_FILE = pathlib.Path(CACHE_DIR, S3_KEY)
+
 # Location of web frontend assets.
 ASSETS_PATH = pathlib.Path(__file__).parent / "frontend" / "dist"
