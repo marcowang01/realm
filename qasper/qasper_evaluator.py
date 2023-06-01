@@ -161,7 +161,8 @@ if __name__ == "__main__":
         prediction_data = json.loads(line)
         predicted_answers_and_evidence[prediction_data["question_id"]] = {
             "answer": prediction_data["predicted_answer"],
-            "evidence": prediction_data["predicted_evidence"]
+            # "evidence": prediction_data["predicted_evidence"]
+            "evidence": []
         }
     evaluation_output = evaluate(gold_answers_and_evidence, predicted_answers_and_evidence)
     print(json.dumps(evaluation_output, indent=2))

@@ -1,0 +1,400 @@
+{"question_id": "cc8b4ed3985f9bfbe1b5d7761b31d9bd6a965444", "predicted_answer": "Intent is annotated using a hierarchical intent annotation scheme.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f7662b11e87c1e051e13799413f3db459ac3e19c", "predicted_answer": "Multiple baselines.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b584739622d0c53830e60430b13fd3ae6ff43669", "predicted_answer": "The evaluation metrics and criteria used to evaluate the model performance are not explicitly mentioned in the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2849c2944c47cf1de62b539c5d3c396a3e8d283a", "predicted_answer": "87.6%.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1a6156189297b2fe17f174ef55cbd20341bb7dbf", "predicted_answer": "They compare their method against other real-time approaches.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3319d56556ae1597a86384057db0831e32774b90", "predicted_answer": "The evaluation metric is F1 score.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "8cbe3fa4ec0f66071e3d6b829b09b6395b631c44", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "85e417231a4bbb6691f7a89bd81710525f8fec4c", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "57ee20f494d8ce3fae46028c3f3551d180dba3e0", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2974237446d04da33b78ce6d22a477cdf80877b7", "predicted_answer": "Unconfirmed (novel) information with respect to news articles is considered as an indication of rumors.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "bc8526d4805e2554adb2e9c01736d3f3a3b19895", "predicted_answer": "Several strong baselines.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a0fd0c0fe042ad045b8d5095c81643ef3a352b81", "predicted_answer": "The paper explores various tasks.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6e040e80f2da69d50386a90a38ed6d2fa4f77bbd", "predicted_answer": "They use four NER datasets: CoNLL03, Onto5, BC5CDR, and WNUT17.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "aebd1f0d728d0de5f76238844da044a44109f76f", "predicted_answer": "They incorporate direction and relative distance in attention using direction and relative position representations in the multi-head self-attention mechanism.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "cb4086ad022197da79f28dc609d0de90108c4543", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "756a8a9125e6984e0ca768b653c6c760efa3db66", "predicted_answer": "Superior accuracy (compared to state-of-the-art systems) was achieved, but no specific accuracy score was provided in the abstract or the arXiv paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "fe52b093735bb456d7e699aa9a2b806d2b498ba0", "predicted_answer": "The paper mentions that there are a number of systems developed for knowledge extraction and question answering, but does not specify what the current state-of-the-art systems are.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7748c072e07d6c6db5a34be38b4a5e97ac6d7999", "predicted_answer": "The paper does not provide information about a specific dataset used for evaluation.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c97306c1be5d59cf27b1054adfa8f1da47d292ce", "predicted_answer": "The paper reports a new state-of-the-art result by improving the F1 score for detection of 1.3 points and of 6.5 points for classification in Italian event detection by utilizing different word embeddings to initialize a state-of-the-art Bi-LSTM-CRF network.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "079ca5810060e1cdc12b5935d8c248492f0478b9", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a3e7d7389228a197c8c44e0c504a791b60f2c80d", "predicted_answer": "The semantic concept label of a particular cluster is decided based on manual inspection and agreement among three human annotators.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d39059340a79bdc0ebab80ad3308e3037d7d5773", "predicted_answer": "Two.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "31d4b0204702907dc0cd0f394cf9c984649e1fbf", "predicted_answer": "Strong baselines used in the paper are not specified.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "371433bd3fb5042bacec4dfad3cfff66147c14f0", "predicted_answer": "Data-driven models usually lag behind rule-based or commercial systems in terms of their perceived appropriateness in responding to abuse.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f64449a21c452bc5395a0f0a49fb49825e6385f4", "predicted_answer": "The paper gathered data from a \"large-scale crowd-sourced evaluation\" but does not provide a specific number. Therefore, the answer is 'Unanswerable'.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3aeb25e334c8129b376f11c7077bcb2dd54f7e0e", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c19e9fd2f1c969e023fb99b74e78eb1f3db8e162", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "230ff86b7b90b87c33c53014bb1e9c582dfc107f", "predicted_answer": "Several morphological typologies are considered in the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "dc23006d67f20f430f1483398de4a89c0be4efe2", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "887d7f3edf37ccc6bf2e755dae418b04d2309686", "predicted_answer": "Word, character, and morphology level information.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b8a3ab219be6c1e6893fe80e1fbf14f0c0c3c97c", "predicted_answer": "Unconstrained figures and captions.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "780c7993d446cd63907bb38992a60bbac9cb42b1", "predicted_answer": "The captions are in unconstrained language.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3da4606a884593f7702d098277b9a6ce207c080b", "predicted_answer": "The paper explores ad-hoc approaches for tasks involving scientific text and figures.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "91336f12ab94a844b66b607f8621eb8bbd209f32", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c5221bb28e58a4f13cf2eccce0e1b1bec7dd3c13", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "42a4ab4607a9eec42c427a817b7e898230d26444", "predicted_answer": "The figure and captions come from scientific literature.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "622efbecd9350a0f4487bdff2b8b362ef2541f3c", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f54e19f7ecece1bb0ef3171403ae322ad572ff00", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4137a82d7752be7a6c142ceb48ce784fd475fb06", "predicted_answer": "The paper does not provide information on the baseline.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6c50871294562e4886ede804574e6acfa8d1a5f9", "predicted_answer": "13th place among 22 shared task competitors.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ed44f7e698d6124cb86791841d02fc6f8b4d862a", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d9e7633004ed1bc1ee45be58409bcc1fa6db59b2", "predicted_answer": "The new dataset contains multiple languages.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c58ef13abe5fa91a761362ca962d7290312c74e4", "predicted_answer": "Aspect of hate considered are multilingual and multi.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9ef0d2365bde0d18054511fbb53cec5fa2cda5ee", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "cbb3c1c1e6e1818b6480f929f1c299eaa5ffd07a", "predicted_answer": "Semantic Web technologies can enhance the quality of machine translation outputs for various problems.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9f74f3991b8681619d95ab93a7c8733a843ddffe", "predicted_answer": "Lexical and syntactic ambiguity.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7c2c15ea3f1b1375b8aaef1103a001069d9915bb", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a77d38427639d54461ae308f3045434f81e497d0", "predicted_answer": "EEG features were used for performing recognition with no speech signal as input and for fusing with noisy speech.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "010fd15696580d9924ac0275a4ff269005e5808d", "predicted_answer": "The paper does not clearly mention a specific baseline system.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d36a6447bfe58204e0d29f9213d84be04d875624", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5ed02ae6c534cd49d405489990f0e4ba0330ff1b", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f6346828c2f44529dc307abf04dd246bfeb4a9b2", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "935873b97872820b7b6100d6a785fba286b94900", "predicted_answer": "LadaBERT achieves state-of-the-art on various public datasets.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f2bcfdbebb418e7da165c19b8c7167719432ee48", "predicted_answer": "Single-document summarization.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0fe49431db5ffaa24372919daf24d8f84117bfda", "predicted_answer": "They use large scale corpora containing hundreds of thousands of document-summary pairs.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0f9c1586f1b4b531fa4fd113e767d06af90b1ae8", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "52faf319e37aa15fff1ab47f634a5a584dc42e75", "predicted_answer": "The paper is talking about predicting commonsense ontologies.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0c7cb3010ed92b8d46583a67e72946a6c0115f1f", "predicted_answer": "The intrinsic geometry of spaces of learned representations refers to the geometrical structure of the embedding space where the learned representations of inputs are located.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9c2cacf77041e02d38f92a4c490df1e04552f96f", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "35cdaa0fff007add4a795850b139df80af7d1ffc", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3de3a083b8ba3086792d38ae9667e095070f7f37", "predicted_answer": "Two: English and Spanish.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "04914917d01c9cd8718cd551dc253eb3827915d8", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "20632fc4d2b693b5aabfbbc99ee5c1e9fc485dea", "predicted_answer": "The multimodal resources consist of diagrams.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a57e266c936e438aeeab5e8d20d9edd1c15a32ee", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "27356a99290fcc01e3e5660af3405d2a6c6f6e7c", "predicted_answer": "The expert annotations provide better representations of diagram types compared to crowd-sourced annotations.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6e37f43f4f54ffc77c785d60c6058fbad2147922", "predicted_answer": "Amazon Mechanical Turk.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "fff1ed2435ba622d884ecde377ff2de127167638", "predicted_answer": "Trained experts are individuals who have been specifically trained to annotate the diagrams in the resource.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7ff7c286d3118a8be5688e2d18e9a56fe83679ad", "predicted_answer": "Neural networks.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1ecbbb60dc44a701e9c57c22167dd412711bb0be", "predicted_answer": "They use a weakly supervised dataset.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "592df9831692b8fde213257ed1894344da3e0594", "predicted_answer": "Cross-domain.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6822ca5f7a19866ffc3c985b790a4aadcecf2d1c", "predicted_answer": "word embeddings", "predicted_evidence": ["no evidence found"]}
+{"question_id": "60e6296ca2a697892bd67558a21a83ef01a38177", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9b868c7d17852f46a8fe725f24cb9548fdbd2b05", "predicted_answer": "YouCookII and 20bn-something-something-v2.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "243cf21c4e34c4b91fcc4905aa4dc15a72087f0c", "predicted_answer": "Two orders-of-magnitude bigger than datasets used in prior work.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "488e3c4fd1103c46e12815d1bf414a0356fb0d0e", "predicted_answer": "visual features", "predicted_evidence": ["no evidence found"]}
+{"question_id": "84765903b8c7234ca2919d0a40e3c6a5bcedf45d", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "38363a7ed250bc729508c4c1dc975696a65c53cb", "predicted_answer": "Current neural machine translation models.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e862ebfdb1b3425af65fec81c8984edca6f89a76", "predicted_answer": "Symbolic rewriting refers to the process of transforming mathematical expressions or symbolic representations of data into equivalent forms.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ec8f39d32084996ab825debd7113c71daac38b06", "predicted_answer": "They guide the discovery of interpretable latent topics in text using fuzzy and informal knowledge from experts to be informative about both correlations in the data and a set of relevance variables specified by an expert. (They use a combination of the information bottleneck and Total Correlation Explanation (CorEx) approach called Anchored CorEx.)", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a67a2d9acad1787b636ca2681330f4c29a0b0254", "predicted_answer": "Two distinct corpora.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1efaf3bcd66d1b6bdfb124f0cec0cfeee27e6124", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "fcdbaa08cccda9968f3fd433c99338cc60f596a7", "predicted_answer": "The paper reports the F-score obtained by the proposed model, but the exact value is not mentioned in the abstract or title, and thus, is unanswerable without further information.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2e4688205c8e344cded7a053b6014cce04ef1bd5", "predicted_answer": "As of September 2021, the state-of-the-art is not provided in the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "fc436a4f3674e42fb280378314bfe77ba0c99f2e", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a71fb012631e6a8854d5945b6d0ab2ab8e7b7ee6", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b70e4c49300dc3eab18e907ab903afd2a0c6075a", "predicted_answer": "The five downstream tasks are classification and sequence labeling tasks.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "088d42ecb1e15515f6a97a0da2fed81b61d61a23", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "8599d6d14ac157169920c73b98a79737c7a68cf5", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f1d61b44105e651925d02a51e6d7ea10ea28ebd8", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "108f99fcaf620fab53077812e8901870896acf36", "predicted_answer": "The paper uses both automatic and human evaluation to evaluate dialogue.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6c8dc31a199b155e73c84173816c1e252137a0af", "predicted_answer": "Inferior performance.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7125db8334a7efaf9f7753f2c2f0048a56e74c49", "predicted_answer": "The paper compares their models against \"monolingual and translation-pipeline models\", but does not specify which specific translation pipelines they use.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "43729be0effb5defc62bae930ceacf7219934f1e", "predicted_answer": "The newly created dataset contains persona conversations in six different languages other than English.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ae2142ee9e093ce485025168f4bcb3da4602739d", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ebe1084a06abdabefffc66f029eeb0b69f114fd9", "predicted_answer": "phrase-based machine translation and neural machine translation", "predicted_evidence": ["no evidence found"]}
+{"question_id": "cfdd583d01abaca923f5c466bb20e1d4b8c749ff", "predicted_answer": "Several context-aware models were experimented.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "554d798e4ce58fd30820200c474d7e796dc8ba89", "predicted_answer": "German, Czech, and English.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "91e361e85c6d3884694f3c747d61bfcef171bab0", "predicted_answer": "They utilize an existing entity linking system to obtain the entity linking results in their model.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6295951fda0cfa2eb4259d544b00bc7dade7c01e", "predicted_answer": "The paper proposes a deep neural model, but the specific architecture is not mentioned.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3f717e6eceab0a066af65ddf782c1ebc502c28c0", "predicted_answer": "They evaluate on two commonly used datasets.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f5603271a04452cbdbb07697859bef2a2030d75c", "predicted_answer": "One domain expert was involved in creating the dataset.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6575ffec1844e6fde5a668bce2afb16b67b65c1f", "predicted_answer": "F1 score.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "77c3416578b52994227bae7f2529600f02183e12", "predicted_answer": "The paper does not provide information on the performance of the fine-tuned model on this dataset.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2abcff4fdedf9b17f76875cc338ba4ab8d1eccd3", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6df57a21ca875e63fb39adece6a9ace5bb2b2cfa", "predicted_answer": "The labeling scheme is defined at the word-level.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b39b278aa1cf2f87ad4159725dff77b387f2df84", "predicted_answer": "BERT (Bidirectional Encoder Representations from Transformers) is used as the pre-trained language model.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "814e945668e2b6f31b088918758b120fb00ada7d", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d4456e9029fcdcb6e0149dd8f57b77d16ead1bc4", "predicted_answer": "The paper does not explicitly mention which metric is considered.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d0b967bfca2039c7fb05b931c8b9955f99a468dc", "predicted_answer": "Various hand-crafted features are used for the task of sentence classification, but the paper does not specify what those features are.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "31e6062ba45d8956791e1b86bad7efcb6d1b191a", "predicted_answer": "The word2vec embeddings are used.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "38b29b0dcb87868680f9934af71ef245ebb122e4", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6e134d51a795c385d72f38f36bca4259522bcf51", "predicted_answer": "The sentence embeddings are generated by averaging the word vectors in the sentence.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0778cbbd093f8b779f7cf26302b2a8e081ccfb40", "predicted_answer": "Argumentative zoning is a task in scientific paper analysis.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "578add9d3dadf86cd0876d42b03bf0114f83d0e7", "predicted_answer": "The paper does not provide information on how they obtained the tweets.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4d5b74499804ea5bc5520beb88d0f9816f67205a", "predicted_answer": "The paper does not mention a baseline that is compared to.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "baec99756b80eec7c0234a08bc2855e6770bcaeb", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "dae2f135e50d77867c3f57fc3cb0427b2443e126", "predicted_answer": "Multiple languages.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "38055717edf833566d912f14137b92a1d9c4f65a", "predicted_answer": "Transformer-based.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b6aa5665c981e3b582db4760759217e2979d5626", "predicted_answer": "Transformer.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c0355afc7871bf2e12260592873ffdb5c0c4c919", "predicted_answer": "The paper does not explicitly mention a single baseline, but instead compares their proposed model to multiple machine-translation-based pipeline methods.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "afeceee343360d3fe715f405dac7760d9a6754a7", "predicted_answer": "Human judges' preference for stories generated by their approach compared to a strong non-hierarchical model is evaluated using a ratio of two to one.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "cc3dd701f3a674618de95a4196e9c7f4c8fbf1e5", "predicted_answer": "BLEU-2, BLEU-3, BLEU-4, self-BLEU, ROUGE-L, METEOR.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d66550f65484696c1284903708b87809ea705786", "predicted_answer": "They compare against strong non-hierarchical model baselines.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "29ba93bcd99c2323d04d4692d3672967cca4915e", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "804bf5adc6dc5dd52f8079cf041ed3a710e03f8a", "predicted_answer": "Transformer model.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f2dba5bf75967407cce5d0a9c2618269225081f5", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b783ec5cb9ad595da7db2c0ddf871152ae382c5f", "predicted_answer": "The stories in the paper's dataset are collected from an online forum.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3eb107f35f4f5f5f527a93ffb487aa2e3fe51efd", "predicted_answer": "Multiple sets of word embeddings.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "47d54a6dd50cab8dab64bfa1f9a1947a8190080c", "predicted_answer": "The datasets used are STS Benchmark dataset and SICK dataset from SemEval.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "67cb001f8ca122ea859724804b41529fea5faeef", "predicted_answer": "The paper compares its proposed model with state-of-the-art methods, however, the specific names of these methods are not mentioned.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "42eb7c5311fc1ac0344f0b38d3184ccd4faad3be", "predicted_answer": "The paper does not mention any specific agreement measure used.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "8d14dd9c67d71494b4468000ff9683afdd11af7e", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b857f3e3f1dad5df55f69d062978967fe023ac6f", "predicted_answer": "Three annotators participated.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5a473f86052cf7781dfe40943ddf99bc9fe8a4e4", "predicted_answer": "Social network and language-based features.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "235c7c7ca719068136928b18e19f9661e0f72806", "predicted_answer": "Aggressive, Repetitive, Intentional, Visible, and Imbalanced.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c87966e7f497975b76a60f6be50c33d296a4a4e7", "predicted_answer": "Cyberbullying is characterized using five factors: aggressive, repetitive, intentional, visible, and imbalanced.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c9eae337edea0edb12030a7d4b01c3a3c73c16d3", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9f1d81b2a6fe6835042a5229690e1951b97ff671", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "fae930129c2638ba6f9c9b3383e85aa130a73876", "predicted_answer": "The system is trying to generate both jokes and quotes together, with the category as an input.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1acfbdc34669cf19a778aceca941543f11b9a861", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "864295caceb1e15144c1746ab5671d085d7ff7a1", "predicted_answer": "They outperform previous state-of-the-art embedding models for knowledge graph completion on two benchmark datasets WN18RR and FB15k-237.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "79e61134a6e29141cd19252571ffc92a0b4bc97f", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "18fbfb1f88c5487f739aceffd23210a7d4057145", "predicted_answer": "They compared their proposed adaptation method with BERT with frozen parameters and BERT with a task-specific head.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5d3e87937ecebf0695bece08eccefb2f88ad4a0f", "predicted_answer": "The paper used three datasets for testing: STS-B, CoNLL-2003, and SST-2.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7d539258b948cd5b5ad1230a15e4b739f29ed947", "predicted_answer": "high inter-annotator agreement", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2694a679a703ccd6139897e4d9ff8e053dabd0f2", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "65c9aee2051ff7c47112b2aee0d928d9b6a8c2fe", "predicted_answer": "They use multiple different datasets.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f8264609a44f059b74168995ffee150182a0c14f", "predicted_answer": "TFIDF, CV, and W2V.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c728fe6137f114c02e921f9be4a02a5bd83ae787", "predicted_answer": "The paper discusses the feature extraction and engineering steps but does not provide a concise list of the features extracted. Answer: Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "50bda708293532f07a3193aaea0519d433fcc040", "predicted_answer": "The evaluation metrics were weighted accuracy and quadratic weighted kappa.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "46e660becd727c994a2a35c6587e15ea8bf8272d", "predicted_answer": "Logistic Regression.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d1a4529ea32aaab5ca3b9d9ae5c16f146c23af6b", "predicted_answer": "The paper concludes with remarks for future work.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7fba61426737394304e307cdc7537225f6253150", "predicted_answer": "The baseline was 42.4%.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "46aa61557c8d20b1223a30366a0704d7af68bbbe", "predicted_answer": "The sentence alignment quality is evaluated by manual evaluation and comparison to well-used parallel translation data.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b3b9d7c8722e8ec41cbbae40e68458485a5ba25c", "predicted_answer": "The speech alignment quality is evaluated through manual evaluation.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0d42bd759c84cbf3a293ab58283a3d0d5e27d290", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9f1e60ee86a5c46abe75b67ef369bf92a5090568", "predicted_answer": "2.99%", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4dc4180127761e987c1043d5f8b94512bbe74d4f", "predicted_answer": "They consistently outperform existing methods.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "420862798054f736128a6f0c4393c7f9cc648b40", "predicted_answer": "The paper evaluates on standard evaluation datasets.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ad8411edf11d3429c9bdd08b3e07ee671464d73c", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "11360385dff0a9d7b8f4b106ba2b7fe15ca90d7c", "predicted_answer": "The paper does not provide information on the baseline.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "875fbf4e5f93c3da63e28a233ce1d8405c7dfe63", "predicted_answer": "The dataset used in this challenge is unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "56b66d19dbc5e605788166e168f36d25f5beb774", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2d924e888a92dc0b14cdb5584e73e87254c3d1ee", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3ed8ac1ba4df6609fa7de5077d83e820641edc5e", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e1ab241059ef1700738f885f051d724a7fcf283a", "predicted_answer": "They used several thesauri, but did not specify which ones.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a4b77a20e067789691e0ab246bc5b11913d77ae1", "predicted_answer": "The paper utilizes a crowd-sourced hate speech lexicon, but it does not provide a specific definition of hate speech. Therefore, the answer is 'Unanswerable'.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ba39317e918b4386765f88e8c8ae99f9a098c935", "predicted_answer": "Multi-class classifier.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "22c125c461f565f5437dac74bf19c2ef317bad86", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4a91432abe3f54fcbdd00bb85dc0df95b16edf42", "predicted_answer": "Unanswerable. The paper does not provide information on the size of their dataset.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7c398615141ca416a32c9f72dbb785d3a6986a0f", "predicted_answer": "Sentiment analysis.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "441be93e2830cc0fc65afad6959db92754c9f5a8", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7f11f128fd39b8060f5810fa84102f000d94ea33", "predicted_answer": "The paper does not provide information on the performance improvement of the proposed method over state-of-the-art models on the used datasets.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2a55076a66795793d79a3edfae1041098404fbc3", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ecaa10a2d9927fa6ab6a954488f12aa6b42ddc1a", "predicted_answer": "By using a multi-task learning paradigm that learns to predict the original label while also predicting whether the sentence contains any hint words, the proposed training framework mitigates the bias pattern.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "8b49423b7d1fa834128aa5038aa16c6ef3fdfa32", "predicted_answer": "SNLI, MNLI-mismatched, Quora, and ANLI.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0aca0a208a1e28857fab44e397dc7880e010dbca", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "471683ba6251b631f38a24d42b6dba6f52dee429", "predicted_answer": "The paper does not provide information on the size of their tweets dataset.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5dfd58f91e7740899c23ebfe04b7176edce9ead2", "predicted_answer": "1.8 million words.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c09bceea67273c10a0621da1a83b409f53342fd9", "predicted_answer": "The paper explored recurrent neural network models for Indonesian POS tagging.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "732bd97ae34541f215c436e2a1b98db1649cba27", "predicted_answer": "Rule-based models were evaluated in the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "183b385fb59ff1e3f658d4555a08b67c005a8734", "predicted_answer": "IDN Tagged Corpus.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5f7f4a1d4380c118a58ed506c057d3b7aa234c1e", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a79a23573d74ec62cbed5d5457a51419a66f6296", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d427e9d181434078c78b7ee33a26b269f160f6d2", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0a5fd0e5f4ab12be57be20416a5ea7c3db5fb662", "predicted_answer": "Flexibility in out-of-vocabulary words.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5d03a82a70f7b1ab9829891403ec31607828cbd5", "predicted_answer": "Yes", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6cad6f074b0486210ffa4982c8d1632f5aa91d91", "predicted_answer": "The model proposed extends the standard ENAMEX type. Answer: Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d38b3e0896b105d171e69ce34c689e4a7e934522", "predicted_answer": "Morphological features for Greek tokens are extracted.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4379a3ece3fdb93b71db43f62833f5f724c49842", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0abc2499195185c94837e0340d00cd3b83ee795e", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "138ad61b43c85d5db166ea9bd3d3b19bb2e2bbfb", "predicted_answer": "By incorporating additional features and a statistical machine learning classifier.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0d9241e904bd2bbf5b9a6ed7b5fc929651d3e28e", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "95646d0ac798dcfc15b43fa97a1908df9f7b9681", "predicted_answer": "The baseline model is not specified in the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "12dc04e0ec1d3ba5ec543069fe457dfa4a1cac07", "predicted_answer": "The corpus of QA tuples has not been directly mentioned in the abstract or title of the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "647f6e6b168ec38fcdb737d3b276f78402282f9d", "predicted_answer": "They used a corpus of question-answer (QA) tuples with a high number of emoji.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "04796aaa59eeb2176339c0651838670fd916074d", "predicted_answer": "AdaBoost and XGBoost were used.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ebb33f3871b8c2ffd2c451bc06480263b8e870e0", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "afd1c482c311e25fc42b9dd59cdc32ac542f5752", "predicted_answer": "182 abstracts.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ae1c4f9e33d0cd64d9a313c318ad635620303cdd", "predicted_answer": "The paper does not provide a concise answer regarding how the new dataset was collected.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "018b81f810a39b3f437a85573d24531efccd835f", "predicted_answer": "Redundancy and ambiguity.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e2c8d7f3ef5913582503e50244ca7158d0a62c42", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "654fe0109502f2ed2dc8dad359dbbce4393e03dc", "predicted_answer": "Four types of structure-dependent agreement relations.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "da21bcaa8e3a9eadc8a5194fd57ae797e93c3049", "predicted_answer": "They evaluate on seven text classification datasets.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "363a24ecb8ab45215134935e7e8165fff72ff90f", "predicted_answer": "Three widely used models.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "74396ead9f88a9efc7626240ce128582ab69ef2b", "predicted_answer": "0.015", "predicted_evidence": ["no evidence found"]}
+{"question_id": "8a7a9d205014c42cb0e24a0f3f38de2176fe74c0", "predicted_answer": "The paper does not provide information on the previous best results model.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "eaed0b721cc3137b964f5265c7ecf76f565053e9", "predicted_answer": "The baseline F1-measures are 0.515 and 0.345.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "38af3f25c36c3725a31304ab96e2c200c55792b4", "predicted_answer": "In-domain and out-of-domain training data were used.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9465d96a1368299fd3662d91aa94ba85347b4ccd", "predicted_answer": "0.859 F1 score.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e8c3f59313df20db0cdd49b84a37c44da849fe17", "predicted_answer": "Several computational models are evaluated on the Offensive Greek Tweet Dataset.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f61268905626c0b2a715282478a5e373adda516c", "predicted_answer": "The Support Vector Machine with Linear Kernel (Linear SVM) performs the best on the offensive language identification task.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d9949dd4865e79c53284932d868ca8fd10d55e70", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "de689a17b0b9fb6bbb80e9b85fb44b36b56de2fd", "predicted_answer": "Three.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5a90871856beeefaa69a1080e1b3c8b5d4b2b937", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "211c242c028b35bb9cbd5e303bb6c750f859fd34", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9b05d5f723a8a452522907778a084b52e27fd924", "predicted_answer": "The size of the published dataset is not provided in the abstract or the arXiv preprint.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "21175d8853fd906266f884bced85c598c35b1cbc", "predicted_answer": "They have three annotators for their dataset.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "87c00edc497274ae6a972c3097818de85b1b384f", "predicted_answer": "The sentence construction component relies on GF Library.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4cf05da602669a4c09c91ff5a1baae6e30adefdf", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7380e62edcb11f728f6d617ee332dc8b5752b185", "predicted_answer": "Character-based neural language model.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f37b01e0c366507308fca44c20d3f69621b94a6e", "predicted_answer": "They show genetic relationships between languages by using language vectors.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "95af7aaea3ce9dab4cf64e2229ce9b98381dd050", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ab37ae82e38f64d3fa95782f2c791488f26cd43f", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6c9b3b2f2e5aac1de1cbd916dc295515301ee2a2", "predicted_answer": "The paper does not provide a concise list of steps in the MagiCoder algorithm.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "71413505d7d6579e2a453a1f09f4efd20197ab4b", "predicted_answer": "MagiCoder is constructed to be linear in the size of the narrative input and the terminology by utilizing a general approach that is not dependent on the considered language nor the term dictionary.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3e6b6820e7843209495b4f9a72177573afaa4bc3", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a926d71e6e58066d279d9f7dc3210cd43f410164", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3d547a7dda18a2dd5dc89f12d25d7fe782d66450", "predicted_answer": "Computational linguistic methods were used for the analysis.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c17ece1dad42d92c78fca2e3d8afa9a20ff19598", "predicted_answer": "The paper does not provide information on how the individuals with bipolar disorder are identified.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c2ce25878a17760c79031a426b6f38931cd854b2", "predicted_answer": "The paper does not provide specific information on the source of the training/testing data. Therefore, the answer is 'Unanswerable'.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1d263356692ed8cdee2a13f103a82d98f43d66eb", "predicted_answer": "Major types of Chinese classical poems.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "68f1df3fb0703ff694a055d23e7ec3f6fb449b8d", "predicted_answer": "The previous work they are comparing to is focused on adjusting translation granularity or expanding the vocabulary size.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c7f43c95db3d0c870407cd0e7becdd802463683b", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4e2b12cfc530a4682b06f8f5243bc9f64bd41135", "predicted_answer": "The quality of the word vectors in the paper is measured by extensive evaluation tasks.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "bc7081aaa207de2362e0bea7bc8108d338aee36f", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c72e05dd41ed5a85335ffeca5a03e71514e60e84", "predicted_answer": "The news texts come from news documents.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "07edc082eb86aecef3db5cad2534459c1310d6e8", "predicted_answer": "The paper does not mention any baseline model used for this task.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "eaacee4246f003d29a108fe857b5dd317287ecf1", "predicted_answer": "Neural keyphrase generation models are trained and evaluated on KPTimes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3ea82a5ca495ffbd1e30e8655aef1be4ba423efe", "predicted_answer": "The editors' annotations in KPTimes differ from those in existing datasets.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b1d255f181b18f7cf8eb3dd2369a082a2a398b7b", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4ae0b50c88a174cfc283b90cd3c9407de13fd370", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a18d74109ed55ed14c33913efa62e12f207279c0", "predicted_answer": "2 layers.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1d6d21043b9fd0ed3ccccdc6317dcf5a1347ef03", "predicted_answer": "They use Precision, Recall, and F1-score as metrics.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b677952cabfec0150e028530d5d4d708d796eedc", "predicted_answer": "2% improvement over other state-of-the-art models in F1-score.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d7799d26fe39302c4aff5b530aa691e8653fffe8", "predicted_answer": "The paper mentions other state-of-art models, but does not specify which models they are.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2711ae6dd532d136295c95253dbf202e37ecd3e7", "predicted_answer": "The paper does not provide information on how to verify the correctness of the word alignments.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "96356c1affc56178b3099ce4b4aece995032e0ff", "predicted_answer": "The paper states that AutoRegressive Translation (ART) models suffer from high inference latency. However, it does not provide a specific number or measure of how slow the ART model is. Therefore, the answer is 'Unanswerable'.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "92fc94a4999d1b25a0593904025eb7b8953bb28b", "predicted_answer": "Translation accuracy is the metric used to measure translation accuracy.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e56c1f0e9eabda41f929d0dfd5cfa50edd69fa89", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a86758696926f2db71f982dc1a4fa4404988544e", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9262292ca4cc78de515b5617f6a91e540eb2678c", "predicted_answer": "6 features are discovered as the most discriminating features.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d796a251792eca01cea31ba5cf3e54ff9acf543f", "predicted_answer": "The paper does not provide information on the results obtained on the alternate datasets.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a526c63fc8dc1b79702b481b77e3922d7002d973", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0f9678e11079ee9ea1a1ce693f017177dd495ee5", "predicted_answer": "The gap between pretraining on SQuAD and not pretraining on SQuAD is not provided in the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0f1f81b6d4aa0da38b4cc8b060926e7df61bb646", "predicted_answer": "The paper does not provide specific details on the machine learning method used for making predictions.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ec62df859ad901bf0848f0a8b91eedc78dba5657", "predicted_answer": "The event prediction task is evaluated through three event-related tasks, which are event similarity, script event prediction, and stock market prediction.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ccec4f8deff651858f44553f8daa5a19e8ed8d3b", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d38745a3910c380e6df97c7056a5dd9643fd365b", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "649e77ac2ecce42ab2efa821882675b5a0c993cb", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0bc305d6b90f77f835bc4c904b22a4be07f963b2", "predicted_answer": "The embeddings for unseen words are evaluated in the human judgement comparison.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "da2350395867b5fd4dbf968b5a1cd6921ab6dd37", "predicted_answer": "Prior deep learning approaches.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "eb653a5c59851eda313ece0bcd8c589b6155d73e", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0caa3162abe588f576a568d63ab9fd0e9c46ceda", "predicted_answer": "The paper shows that the two-stage system can achieve high accuracy for Chinese dialects recognition under both short utterance and long utterance conditions with less training time. No specific accuracy results are mentioned in the abstract.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "cbe42bf7c99ee248cdb2c5d6cf86b41106e66863", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "94d794df4a3109522c2ea09dad5d40e55d35df51", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "044c66c6b7ff7378682f24887b05e1af79dcd04f", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "903ac8686ed7e6e3269a5d863f06ff11c50e49e8", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ab95ca983240ad5289c123a2774f8e0db424f4a1", "predicted_answer": "BEA stands for \"Building Educational Applications\".", "predicted_evidence": ["no evidence found"]}
+{"question_id": "fcf9377fc3fce529d4bab1258db3f46b15ae5872", "predicted_answer": "Modular system.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5422a3f2a083395416d6f99c57d28335eb2e44e1", "predicted_answer": "Wiki community effort.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7c2d6bc913523d77e8fdc82c60598ee95b445d84", "predicted_answer": "Subjective text is automatically neutralized through a novel testbed for natural language generation which brings biased text into a neutral point of view, along with two strong encoder-decoder baselines: a CONCURRENT system and a MODULAR algorithm.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1a0794ebbc9ee61bbb7ef2422d576a10576d9d96", "predicted_answer": "The paper investigates the feasibility of using skeletal and RGB video data for sign language recognition.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "256dfa501a71d7784520a527f43aec0549b1afea", "predicted_answer": "93.5%", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f85520bbc594918968d7d9f33d11639055458344", "predicted_answer": "Multiple deep learning architectures were used in the paper, but specific names or types were not mentioned.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e4f2d59030b17867449cf5456118ab722296bebd", "predicted_answer": "The authors of the paper made the stated claim.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e664b58ea034a638e7142f8a393a88aadd1e215e", "predicted_answer": "Twelve languages.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c4b621f573bbb411bdaa84a7562c9c4795a7eb3a", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3ccc4ccebc3b0de5546b1208e8094a839fd4a4ab", "predicted_answer": "Case syncretism refers to the situation where one form of a word serves for multiple case distinctions.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2dba0b83fc22995f83e7ac66cc8f68bcdcc70ee9", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a8cc891bb8dccf0d32c1c9cd1699d5ead0eed711", "predicted_answer": "GPT-2 and LSTM models are used to generate responses.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "8330242b56b63708a23c6a92db4d4bcf927a4576", "predicted_answer": "The paper does not specify any particular types of hate speech that are considered.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a4cf0cf372f62b2dbc7f31c600c6c66246263328", "predicted_answer": "They compare their proposed method to strong baselines.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f7b91b99279833f9f489635eb8f77c6d13136098", "predicted_answer": "Both-side fusion.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "99e514acc0109b7efa4e3860ce1e8c455f5bb790", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2fec84a62b4028bbe6500754d9c058eefbc24d9a", "predicted_answer": "92.86 and 89.32.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2803709fba74e6098aae145abcbf0e9a3f4c35e5", "predicted_answer": "The baseline model is not specified in the abstract.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ec39120fb879ae10452d3f244e1e32237047005a", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ac87dd34d28c3edd9419fa0145f3d38c87d696aa", "predicted_answer": "LibriSpeech dataset", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e66a88eecf8d5d093caec1f487603534f88dd7e7", "predicted_answer": "Speaker characteristics are disentangled.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "fef5b65263c81299acc350a101dabaf5a8cb9c6e", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f40e23adc8245562c8677f0f86fa5175179b5422", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "50bcbb730aa74637503c227f022a10f57d43f1f7", "predicted_answer": "The paper does not explicitly mention what the baseline model is.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "fac273ecb3e72f2dc94cdbc797582d7225a8e070", "predicted_answer": "Additional statistical features from information retrieval task integrated into Convolutional Neural Network contribute to higher accuracy.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7c561db6847fb0416bca8a6cb5eebf689a4b1438", "predicted_answer": "They experimented with pretraining on datasets of varying sizes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "13eb64957478ade79a1e81d32e36ee319209c19a", "predicted_answer": "The paper does not provide the information regarding the number of layers in their model.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "32f2aa2df0152050cbcd27dd2f408b2fa5894031", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "065623cc1d5f5b19ec1f84d286522fc2f805c6ce", "predicted_answer": "They report experiments with several supervised machine learning techniques to classify sentences, but specific models used are not mentioned.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5c17559749810c67c50a7dbe34580d5e3b4f9acb", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1c0a575e289eb486d3e6375d6f783cc2bf18adf9", "predicted_answer": "Two new annotated clinical guidelines datasets are released.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4efe0d62bba618803ec12b63f32debb8b757dd68", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f11856814a57b86667179e1e275e4f99ff1bcad8", "predicted_answer": "A wide range of NLG tasks were considered.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "0bb97991fc297aa5aed784568de52d5b9121f920", "predicted_answer": "State-of-the-art methods for multi-document summarization are compared to in the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "7ba6330d105f49c7f71dba148bb73245a8ef2966", "predicted_answer": "ROUGE-1, ROUGE-2, and ROUGE-SU4.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "157de5175259d6f25db703efb299f948dae597b7", "predicted_answer": "The original model they refer to is not explicitly stated in the abstract or the arXiv ID provided. Therefore, the answer is Unanswerable based on the available information.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "cf3fab54b2b289b66e7dba4706c47a62569627c5", "predicted_answer": "A small number of sentences are selected from each document prior to constructing the summary.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "000549a217ea24432c0656598279dbb85378c113", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "43f43b135109ebd1d2d1f9af979c64ce550b5f0f", "predicted_answer": "The paper does not provide information on the type of classifiers used.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e797634fa77e490783b349034f9e095ee570b7a9", "predicted_answer": "The paper does not mention who annotated the Twitter and Reddit data for irony.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "475e698a801be0ad9e4f74756d1fff4fe0728009", "predicted_answer": "Resources from a pair of languages in the CoNLL 2009 shared task.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "8246d1eee1482555d075127ac84f2e1d0781a446", "predicted_answer": "CoNLL 2009 shared task dataset.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1ec0be667a6594eb2e07c50258b120e693e040a8", "predicted_answer": "The paper does not provide a specific monolingual baseline, therefore it is Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e3bafa432cd3e1225170ff04de2fdf1ede38c6ef", "predicted_answer": "The paper explores a pair of languages in the CoNLL 2009 shared task.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "dde29d9ea5859aa5a4bcd613dca80aec501ef03a", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9b1382b44dc69f7ee20acf952f7ceb1c3ef83965", "predicted_answer": "The problem of session segmentation.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3c414f7fbf577dfd3363be6bbc9eba8bdd01f45f", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "6157567c5614e1954b801431fec680f044e102c6", "predicted_answer": "Yes", "predicted_evidence": ["no evidence found"]}
+{"question_id": "8ea4a75dacf6a39f9d385ba14b3dce715a47d689", "predicted_answer": "Domain relevance was estimated by computing the cosine similarity between the word embeddings of the question and the KB.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1e11e74481ead4b7635922bbe0de041dc2dde28d", "predicted_answer": "A small number of hand-crafted templates were applied on the input KB. The exact number was not specified.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f0404673085517eea708c5e91f32fb0f7728fa08", "predicted_answer": "The data used in this work is tennis post-match interviews.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "63cdac43a643fc1e06da44910458e89b2c7cd921", "predicted_answer": "The dataset, Fluent Speech Commands, is not explicitly described as being collected in any particular manner in the abstract or introduction of the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "37ac705166fa87dc74fe86575bf04bea56cc4930", "predicted_answer": "The evaluation metrics used were correctness within 10% and percentage of cases where the model predicted correctly.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "90aba75508aa145475d7cc9a501bbe987c0e8413", "predicted_answer": "The paper does not provide information on the datasets used.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e6204daf4efeb752fdbd5c26e179efcb8ddd2807", "predicted_answer": "Automated metrics (BLEU and METEOR scores) and human evaluations.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "95c3907c5e8f57f239f3b031b1e41f19ff77924a", "predicted_answer": "The quality of sentence transition was measured using both manual and automated evaluation methods.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b900122c7d6c2d6161bfca8a95eae11952d1cb58", "predicted_answer": "The dataset used in the paper is the Convote dataset. The size of the dataset is not provided.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5206b6f40a91fc16179829041c1139a6c6d91ce7", "predicted_answer": "A manual evaluation of the quality of generated speeches is presented.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "48ff9645a506aa2c17810d2654d1f0f0d9e609ee", "predicted_answer": "The paper analyzes the performance of DistilBERT on a wide range of downstream tasks.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "84ee6180d3267115ad27852027d147fb86a33135", "predicted_answer": "The paper does not provide information on the amount of time it takes to train DistilBERT.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c7ffef8bf0100eb6148bd932d0409b21759060b1", "predicted_answer": "The paper does not specify which datasets are used.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3cc0d773085dc175b85955e95911a2cfaab2cdc4", "predicted_answer": "English and Dutch.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "dfd07a8e2de80c3a8d075a0f400fb13a1f1d4c60", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2e70d25f14357ad74c085a9454a2ce33bb988a6f", "predicted_answer": "The paper does not provide a specific answer to this question.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "de84972c5d1bbf664d0f8b702fce5f161449ec23", "predicted_answer": "The text is divided into segments.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "bab4e8881f4d75e266bce6fbfa4c3bcd3eacf30f", "predicted_answer": "State of the art models are not specified in the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "11dd2913d1517a1d47b367acb29fe9d79a9c95d1", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "8701ec7345ccc2c35eca4e132a8e16d58585cd63", "predicted_answer": "They evaluate on four language pairs.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d20fd6330cb9d03734e2632166d6c8f780359a94", "predicted_answer": "The model introduced in the paper outperforms previous state-of-the-art systems by a large margin.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1a1d94c981c58e2f2ee18bdfc4abc69fd8f15e14", "predicted_answer": "The paper explores Indigenous languages in India.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5d790459b05c5a3e6f1e698824444e55fc11890c", "predicted_answer": "Baseline methods were not stated in the abstract of the paper. Therefore, the answer is 'Unanswerable'.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1ef6471cc3e1eb10d2e92656c77020ca1612f08e", "predicted_answer": "The proposed model outperforms the two baseline methods.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d976c22e9d068e4e31fb46e929023459f8290a63", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a1ac4463031bbc42c80893b57c0055b860f12e10", "predicted_answer": "The paper proposes a baseline, but the specific details of the baseline are not mentioned.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3216dfc233be68206bd342407e2ba7da3843b31d", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4f57ac24f3f4689a2f885715cd84b7d867fe3f12", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "46146ff3ef3430924e6b673a28df96ccb869dee4", "predicted_answer": "0.81.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d0048ef1cba3f63b5d60c568d5d0ba62ac4d7e75", "predicted_answer": "The paper integrates a language model for context-aware search to improve word-by-word translation of cross-lingual embeddings. (Answer: Integrates it)", "predicted_evidence": ["no evidence found"]}
+{"question_id": "47ffc9811b037613c9c4d1ec1e4f13c08396ed1c", "predicted_answer": "The paper uses a benchmark dataset.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4e63454275380787ebd0e38aa885977332ab33af", "predicted_answer": "The paper did not provide a concise answer for what evaluation metrics were used.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "dfaeb8faf04505a4178945c933ba217e472979d8", "predicted_answer": "The source of their dataset is not explicitly mentioned in the abstract or title of the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "342ada55bd4d7408e1fcabf1810b92d84c1dbc41", "predicted_answer": "The paper does not provide a specific value for the improvement in performance.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "86d1c990c1639490c239c3dbf5492ecc44ab6652", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b065c2846817f3969b39e355d5d017e326d6f42e", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "9536e4a2455008007067f23cc873768374c8f664", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "cfa44bb587b0c05906d8325491ca9e0f024269e8", "predicted_answer": "The paper describes the methods for data collection, aspect annotation, and summary writing as well as scrutinizing by experts.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b3dc9a35e8c3ed7abcc4ca0bf308dea75be9c016", "predicted_answer": "The dataset contains news documents and reader comments for reader-aware multi-document summarization, which was annotated with aspects and scrutinized by experts.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "71fd0efea1b441d86d9a75255815ba3efe09779b", "predicted_answer": "The authors measure the extent to which LGI has learned the task by calculating accuracy and cross-entropy loss.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "fb9e333a4e5d5141fe8e97b24b8f7e5685afbf09", "predicted_answer": "LGI has incrementally learned eight different syntaxes (or tasks).", "predicted_evidence": ["no evidence found"]}
+{"question_id": "cb029240d4dedde74fcafad6a46c1cfc2621b934", "predicted_answer": "An LSTM mimics the PreFrontal Cortex by being implemented as the PFC in the Language guided imagination (LGI) network.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "11a8531699952f5a2286a4311f0fe80ed1befa1e", "predicted_answer": "An LSTM mimics the intra parietal sulcus by implementing it in the language system of the LGI network.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "bcf222ad4bb537b01019ed354ea03cd6bf2c1f8e", "predicted_answer": "Imagined scenarios are disentangled abstract population representations reconstructed from higher level representations.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "af45ff2c4209f14235482329d0729864fb2bd4b0", "predicted_answer": "They experiment with learned classifiers on a small annotated subset, but the paper does not specify which specific classifiers were used.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "d2451d32c5a11a0eb8356a5e9d94a9231b59f198", "predicted_answer": "No.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "90dde59e1857a0d2b1ee4615ab017fee0741f29f", "predicted_answer": "They identified the languages of the text from GitHub repository metadata.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "811b67460e65232b8f363dc3f329ffecdfcc4ab2", "predicted_answer": "GitHub repositories.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "68aa460ad357b4228b16b31b2cbec986215813bf", "predicted_answer": "Three features: edit distance, Levenshtein distance, and character n-grams", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4542b162a5be00206fd14570898a7925cb267599", "predicted_answer": "More than 15 languages.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a17fc7b96753f85aee1d2036e2627570f4b50c30", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c6170bb09ba2a416f8fa9b542f0ab05a64dbf2e4", "predicted_answer": "BM25 baseline is a retrieval baseline that is compared to BERT embeddings on factoid and non-factoid question-answering datasets at the passage level in the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "fe080c6393f126b55ae456b81133bfc8ecbe85c2", "predicted_answer": "Combining embeddings from different BERT layers boosted performance.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "53a8c3cf22d6bf6477bc576a85a83d8447ee0484", "predicted_answer": "Natural Language Inference data.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3a33512d253005ac280ee9ca4f9dfa69aa38d48f", "predicted_answer": "Four QA datasets are examined, but the paper does not specify the names of each dataset.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "f7f2968feb28c2907266c892f051ae9f7d6286e6", "predicted_answer": "The sentence embeddings are evaluated against semantic similarity and sentence surface information probing tasks from SentEval.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "38289bd9592db4d3670b65a0fef1fe8a309fee61", "predicted_answer": "The paper proposes a supervised machine learning model based on a range of linguistic features to classify texts according to their difficulty level. The specific classifiers they used are not mentioned.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "cb7a00233502c4b7801d34bc95d6d22d79776ae8", "predicted_answer": "The paper does not provide a specific name for the dataset used, but it mentions using \"a range of linguistic features\" to train their machine learning model for predicting linguistic complexity of Swedish second language learning material.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "35d2eae3a7c9bed54196334a09344591f9cbb5c8", "predicted_answer": "Using a combination of different features resulted in a 7% improvement in classification accuracy at the sentence level.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "a70656fc61bf526dd21db7d2ec697b29a5a9c24e", "predicted_answer": "The paper proposes a supervised machine learning model based on a range of linguistic features to predict linguistic complexity; however, it does not provide a comprehensive list of the specific linguistic features utilized.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "c176eb1ccaa0e50fb7512153f0716e60bf74aa53", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e0b54906184a4ad87d127bed22194e62de38222b", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1f8044487af39244d723582b8a68f94750eed2cc", "predicted_answer": "Unsupervised topic modeling.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "595fe416a100bc7247444f25b11baca6e08d9291", "predicted_answer": "Profiling features.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1f011fa772ce802e74eda89f706cdb1aa2833686", "predicted_answer": "Thematic information and profiling features.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "181027f398a6b79b1ba44d8d41cc1aba0d6f5212", "predicted_answer": "They compare KeyVec with two other document representation models.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "ab097db03652b8b38edddc074f23e2adf9278cba", "predicted_answer": "3.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "5d4190403eb800bb17eec71e979788e11cf74e67", "predicted_answer": "The paper performs empirical evaluations.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "56d41e0fcc288c1e65806ae77097d685c83e22db", "predicted_answer": "Two different document understanding tasks.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "1237b6fcc64b43901415f3ded17cc210a54ab698", "predicted_answer": "Unanswerable. The paper does not mention any specific dataset that was used in their experiments.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "31cba86bc45970337ba035ecf36d8954a9a5206a", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3a25f82512d56d9e1ffba72f977f515ae3ba3cca", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b59f3a58939f7ac007d3263a459c56ebefc4b49a", "predicted_answer": "Speech recognition, speech synthesis, machine translation, and spell and grammar checking.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "b4b7333805cb6fdde44907747887a971422dc298", "predicted_answer": "Other national language technology programs are not described in the paper.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "871f7661f5a3da366b0b5feaa36f54fd3dedae8e", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "3fafde90eebc1c00ba6c3fb4c5b984009393ce7f", "predicted_answer": "High accuracy", "predicted_evidence": ["no evidence found"]}
+{"question_id": "e6bc11bd6cfd4b2138c29602b9b56fc5378a4293", "predicted_answer": "Unanswerable.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "90829d5fde4f5f0ffc184c5e8fc64c8ac5ece521", "predicted_answer": "The paper did not mention a baseline.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "4748a50c96acb1aa03f7efd1b43376c193b2450a", "predicted_answer": "The gold standard dataset was used.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "acac0606aab83cae5d13047863c7af542d58e54c", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "2ee4ecf98ef7d02c9e4d103968098fe35f067bbb", "predicted_answer": "There are existing datasets for this task.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "82f8843b59668567bba09fc8f93963ca7d1fe107", "predicted_answer": "The introduced dataset is significantly larger than existing datasets.", "predicted_evidence": ["no evidence found"]}
+{"question_id": "376e8ed6e039e07c892c77b7525778178d56acb7", "predicted_answer": "Yes.", "predicted_evidence": ["no evidence found"]}
