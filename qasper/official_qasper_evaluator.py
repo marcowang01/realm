@@ -31,7 +31,7 @@ def normalize_answer(s):
     return white_space_fix(remove_articles(remove_punc(lower(s))))
 
 
-def token_scores(prediction, ground_truth):
+def token_f1_score(prediction, ground_truth):
     """
     Taken from the official evaluation script for v1.1 of the SQuAD dataset.
     """
@@ -40,24 +40,24 @@ def token_scores(prediction, ground_truth):
     common = Counter(prediction_tokens) & Counter(ground_truth_tokens)
     num_same = sum(common.values())
     if num_same == 0:
-        return (0.0, 0.0, 0.0)
+        return 0
     precision = 1.0 * num_same / len(prediction_tokens)
     recall = 1.0 * num_same / len(ground_truth_tokens)
     f1 = (2 * precision * recall) / (precision + recall)
-    return (precision, recall, f1)
+    return f1
 
 
-def paragraph_scores(prediction, ground_truth):
+def paragraph_f1_score(prediction, ground_truth):
     if not ground_truth and not prediction:
         # The question is unanswerable and the prediction is empty.
-        return (1.0, 1.0, 1.0)
+        return 1.0
     num_same = len(set(ground_truth).intersection(set(prediction)))
     if num_same == 0:
-        return (0.0, 0.0, 0.0)
+        return 0.0
     precision = num_same / len(prediction)
-    recall = num_same / len(ground_truth) 
+    recall = num_same / len(ground_truth)
     f1 = (2 * precision * recall) / (precision + recall)
-    return (precision, recall, f1)
+    return f1
 
 
 def get_answers_and_evidence(data, text_evidence_only):
@@ -96,77 +96,40 @@ def get_answers_and_evidence(data, text_evidence_only):
 
 
 def evaluate(gold, predicted):
-    max_answer_scores = { "f1": [], "precision": [], "recall": [] }
-    max_evidence_scores = { "f1": [], "precision": [], "recall": [] }
-    max_answer_by_type = {
-        "extractive": { "f1": [], "precision": [], "recall": [] },
-        "abstractive": { "f1": [], "precision": [], "recall": [] },
-        "boolean": { "f1": [], "precision": [], "recall": [] },
-        "none": { "f1": [], "precision": [], "recall": [] },
+    max_answer_f1s = []
+    max_evidence_f1s = []
+    max_answer_f1s_by_type = {
+        "extractive": [],
+        "abstractive": [],
+        "boolean": [],
+        "none": [],
     }
-
     num_missing_predictions = 0
     for question_id, references in gold.items():
         if question_id not in predicted:
             num_missing_predictions += 1
-            # not sure why this is done? 
             # max_answer_f1s.append(0.0)
             # max_evidence_f1s.append(0.0)
             continue
-        answer_scores_and_types = [
-            (*token_scores(predicted[question_id]["answer"], reference["answer"]),
+        answer_f1s_and_types = [
+            (token_f1_score(predicted[question_id]["answer"], reference["answer"]),
              reference["type"])
             for reference in gold[question_id]
         ]
-
-        # 0: sort by precision, 1: sort by recall, 2: sort by f1
-        sorted_scores_and_types = sorted(answer_scores_and_types, key=lambda x: x[0], reverse=True)
-        max_answer_precision, _, _, answer_type = sorted_scores_and_types[0]
-        max_answer_scores["precision"].append(max_answer_precision)
-        max_answer_by_type[answer_type]["precision"].append(max_answer_precision)
-
-        sorted_scores_and_types = sorted(answer_scores_and_types, key=lambda x: x[1], reverse=True)
-        _, max_answer_recall, _, answer_type = sorted_scores_and_types[0]
-        max_answer_scores["recall"].append(max_answer_recall)
-        max_answer_by_type[answer_type]["recall"].append(max_answer_recall)
-
-        sorted_scores_and_types = sorted(answer_scores_and_types, key=lambda x: x[2], reverse=True)
-        _, _, max_answer_f1, answer_type = sorted_scores_and_types[0]
-        max_answer_scores["f1"].append(max_answer_f1)
-        max_answer_by_type[answer_type]["f1"].append(max_answer_f1) 
-
-
-
-        evidence_scores = [
-            paragraph_scores(predicted[question_id]["evidence"], reference["evidence"])
+        max_answer_f1, answer_type = sorted(answer_f1s_and_types, key=lambda x: x[0], reverse=True)[0]
+        max_answer_f1s.append(max_answer_f1)
+        max_answer_f1s_by_type[answer_type].append(max_answer_f1)
+        evidence_f1s = [
+            paragraph_f1_score(predicted[question_id]["evidence"], reference["evidence"])
             for reference in gold[question_id]
         ]
-        max_evidence_precision, max_evidence_recall, max_evidence_f1 = max(evidence_scores)
-        max_evidence_scores["precision"].append(max_evidence_precision)
-        max_evidence_scores["recall"].append(max_evidence_recall)
-        max_evidence_scores["f1"].append(max_evidence_f1)
-
-
-        # max_answer_f1s.append(max_answer_f1)
-        # max_answer_f1s_by_type[answer_type].append(max_answer_f1)
-        # evidence_f1s = [
-        #     paragraph_scores(predicted[question_id]["evidence"], reference["evidence"])[0] 
-        #     for reference in gold[question_id]
-        # ]
-        # max_evidence_f1s.append(max(evidence_f1s))
+        max_evidence_f1s.append(max(evidence_f1s))
 
     mean = lambda x: sum(x) / len(x) if x else 0.0
     return {
-        # "Answer F1": mean(max_answer_f1s),
-        "Answer F1": mean(max_answer_scores["f1"]),
-        # "Answer F1 by type": {key: mean(value) for key, value in max_answer_f1s_by_type.items()},
-        "Answer F1 by type": {key: mean(value["f1"]) for key, value in max_answer_by_type.items()},
-        "Answer Precision": mean(max_answer_scores["precision"]),
-        "Answer Precision by type": {key: mean(value["precision"]) for key, value in max_answer_by_type.items()},
-        "Answer Recall": mean(max_answer_scores["recall"]),
-        "Answer Recall by type": {key: mean(value["recall"]) for key, value in max_answer_by_type.items()},
-        # "Evidence F1": mean(max_evidence_f1s),
-        "Evidence F1": mean(max_evidence_scores["f1"]),
+        "Answer F1": mean(max_answer_f1s),
+        "Answer F1 by type": {key: mean(value) for key, value in max_answer_f1s_by_type.items()},
+        "Evidence F1": mean(max_evidence_f1s),
         "Missing predictions": num_missing_predictions
     }
 
@@ -198,9 +161,7 @@ if __name__ == "__main__":
         prediction_data = json.loads(line)
         predicted_answers_and_evidence[prediction_data["question_id"]] = {
             "answer": prediction_data["predicted_answer"],
-            # "evidence": prediction_data["predicted_evidence"]
-            "evidence": []
+            "evidence": prediction_data["predicted_evidence"]
         }
     evaluation_output = evaluate(gold_answers_and_evidence, predicted_answers_and_evidence)
     print(json.dumps(evaluation_output, indent=2))
-

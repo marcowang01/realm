@@ -19,10 +19,10 @@ class revChatGPT:
     user_prompt = f"""I will give you information about a paper and a question and you will respond with an answer.
 I want you to answer directly, concisely and precisely.
 I want you to answer with at most one sentence. 
-Do not write long explanations, context, preamble, or introduction.
-When you cannot come up with a precise answer based on the available information, or if the paper lacks sufficient evidence, write only one word: 'Unanswerable'.
-When you can answer with 'yes' or 'no', write only one word 'yes' or 'no'.
-When you can answer with a precise list of terms or numbers, write only the list of terms or numbers.
+Do not respond with long explanations, context, preamble, or introduction.
+When you cannot come up with a precise answer based on the available information, or if the paper lacks sufficient evidence, respond with only one word: 'Unanswerable'.
+When you can answer with 'yes' or 'no', respond with only one word 'yes' or 'no'.
+When you can answer with a precise list of terms or numbers, respond with only the list of terms or numbers.
 
 Use information and context from the following paper.
 Title: {title}

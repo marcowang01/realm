@@ -118,4 +118,6 @@ Answer: {self.answer}
     with open('bard_response.jsonl', 'a') as f:
       f.write(json.dumps(json_obj) + '\n')
 
+    time.sleep(10)
+
     return self.answer

@@ -11,7 +11,7 @@ import time
 # evaluate the answer and evidence
 # print the results
 
-TRIALS = 5
+TRIALS = 400
 
 bard = revBard()
 chatGPT = revChatGPT()
@@ -26,7 +26,7 @@ print(f"dataset size: {len(dataset)}")
 
 # create chatGPT responses
 count = 0
-print("Being answering questions...")
+print("Begin answering questions...")
 with tqdm(total=TRIALS, ncols=100, file=sys.stdout) as pbar:
   for key, value in dataset.items():
       paper = value
@@ -58,11 +58,4 @@ with tqdm(total=TRIALS, ncols=100, file=sys.stdout) as pbar:
       # if count % 10 == 0:
       #   print(f"question answered: {count}")
 
-
-
-# TODO: set up new bard
-# TODO: try new prompts for bard using I want you
-# TODO: make new chatbot template class for both 
-# TODO: use new chatGPT api after figuring it out
-# TODO: each chatbot its own class, with generate, prompting, and write to files as separate classes
 

@@ -1,12 +1,18 @@
-import json
+from revChatGPT.V1 import Chatbot
+print("init chat bot")
+chatbot = Chatbot(config={
+    "access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEVOVUpHTkVNMVFURTRNMEZCTWpkQ05UZzVNRFUxUlRVd1FVSkRNRU13UmtGRVFrRXpSZyJ9.eyJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJzdGFubGV5d2FuZzI5OTlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsidXNlcl9pZCI6InVzZXItMGM2OVpaZ3BYUXltQ2Jiems3djA2QlVCIn0sImlzcyI6Imh0dHBzOi8vYXV0aDAub3BlbmFpLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExNTQ1NDgwNTA3MzcyMTk3MTE5OCIsImF1ZCI6WyJodHRwczovL2FwaS5vcGVuYWkuY29tL3YxIiwiaHR0cHM6Ly9vcGVuYWkub3BlbmFpLmF1dGgwYXBwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2ODU0OTU1MjAsImV4cCI6MTY4NjcwNTEyMCwiYXpwIjoiVGRKSWNiZTE2V29USHROOTVueXl3aDVFNHlPbzZJdEciLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIG1vZGVsLnJlYWQgbW9kZWwucmVxdWVzdCBvcmdhbml6YXRpb24ucmVhZCBvcmdhbml6YXRpb24ud3JpdGUifQ.sHK-1IXcgMgSMLoeyt1wvqGafUlv5D0rFfjFN-DdMKyeq1ply10ouC3g6pd39yy25xnjlcmA-E98wC7uDC5yWfl8N7X_H7g4GtQQNwfquYT8ua3MvRnThhbwRNKaLeNc7MuC3Yh8KP4BaF8RwWcQziQttpMRQTgzP6I4iNq_7H4ugWSJ7sh1wnMZS6YKZVFU5tzwmWA7qgxwxeuTrdUsgZA_eRBenffsa8aAaTidD-9Gyif7UQb5vYr6f8FuIP_Fy9lMGfyloJTprYb50lkgbKmSiZvk7U6XKwwYjPAk6ylbAAy9-uvgcFoXWCo4g6YQBeGwHlj84mVJh_Mn1SXVfA",
+    "model":"text-davinci-002-render-sha",
+    "disable_history": True,
+    "proxy": "127.0.0.1:9090/api/"
+})
 
-with open('bard_response.jsonl', 'r') as f, open('your_file_temp.jsonl', 'w') as out:
-    for line in f:
-        json_obj = json.loads(line)
-        if "error" not in json_obj["predicted_answer"]:
-            out.write(line)
+prompt = "how many beaches does portugal have?"
+response = ""
+print
+for data in chatbot.ask(
+  prompt
+):
+    response = data["message"]
 
-# after writing all the lines to the new file, remove the original file and rename the new file
-import os
-os.remove('bard_response.jsonl')
-os.rename('your_file_temp.jsonl', 'bard_response.jsonl')
+print(response)
