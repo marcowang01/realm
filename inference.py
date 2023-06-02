@@ -16,11 +16,11 @@ TRIALS = 400
 bard = revBard()
 chatGPT = revChatGPT()
 
-USE_GPT = False
+USE_GPT = True
 
 
 # load the test set
-path = "qasper/qasper-train-v0.3.json"
+path = "qasper/qasper-test-v0.3.json"
 dataset = json.load(open(path))
 print(f"dataset size: {len(dataset)}")
 
@@ -42,15 +42,15 @@ with tqdm(total=TRIALS, ncols=100, file=sys.stdout) as pbar:
         question_id = qa["question_id"]
         try:
           if USE_GPT:
-            system_prompt, user_prompt = chatGPT.createPropmt(title, abstract, question_id, question)
-            response = chatGPT.sample(system_prompt, user_prompt, question_id)
+            prompt = chatGPT.createPropmt(title, abstract, question_id, question)
+            response = chatGPT.sample(prompt, question_id)
           else:
             prompt = bard.createPrompt(title, abstract, question_id, question)
             response = bard.sample(prompt, question_id, question)
         except Exception as e:
           # print the error
           print(question_id)
-          print(f"error: {e}")
+          print(f"inference error: {e}")
           continue
 
         count += 1

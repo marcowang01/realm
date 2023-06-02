@@ -9,10 +9,9 @@ chatbot = Chatbot(config={
 
 prompt = "how many beaches does portugal have?"
 response = ""
-print
-for data in chatbot.ask(
-  prompt
-):
+
+# print(chatbot.ask(prompt))
+for data in chatbot.ask(prompt):
     response = data["message"]
 
 print(response)

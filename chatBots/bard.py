@@ -2,6 +2,7 @@ from os import environ
 from bardapi import Bard
 from .chatGPT import revChatGPT
 import json
+import time
 
 class revBard:
   def __init__(self, session_token):
@@ -24,23 +25,37 @@ class revBard:
     Returns:
       The prompt for Bard.
     """
-    prompt = f"""I want you to act like a machine learning professor. You will answer questions about a specific machine learning paper by following the instructions of the user.
-I will give you information about a paper and a question and you will respond with an answer.
-I want you to answer directly, concisely and precisely. Write in plain text without additional formatting.
-I want you to answer with at most one sentence. 
-Do not write long explanations, context, preamble, or introduction.
-Do not write evidence or justification for your answer.
-When you cannot come up with a precise answer based on the available information, or if the paper lacks sufficient evidence, write only one word: 'Unanswerable'.
-When you can answer with 'yes' or 'no', write only one word 'yes' or 'no'.
-When you can answer with a precise list of terms or numbers, write only the list of terms or numbers.
+#     prompt = f"""I want you to act like a machine learning professor. You will answer questions about a specific machine learning paper by following the instructions of the user.
+# I will give you information about a paper and a question and you will respond with an answer.
+# I want you to answer directly, concisely and precisely. Write in plain text without additional formatting.
+# I want you to answer with at most one sentence. 
+# Do not write long explanations, context, preamble, or introduction.
+# Do not write evidence or justification for your answer.
+# When you cannot come up with a precise answer based on the available information, or if the paper lacks sufficient evidence, write only one word: 'Unanswerable'.
+# When you can answer with 'yes' or 'no', write only one word 'yes' or 'no'.
+# When you can answer with a precise list of terms or numbers, write only the list of terms or numbers.
 
-Use information from the following paper.
+# Use information from the following paper.
+# Title: {title}
+# Abstract: {abstract}
+# arXiv ID: {arxiv_id}
+# arXiv URL: https://arxiv.org/pdf/{arxiv_id}.pdf
+
+# My first question is: {question}"""
+    prompt = f"""I want you to act like a machine learning professor. You will answer questions about a specific machine learning paper by following the instructions of the user.
+I want you to answer directly, concisely and precisely. Write in plain text without additional formatting.
+I want you to answer with at most one sentence.
+
 Title: {title}
 Abstract: {abstract}
 arXiv ID: {arxiv_id}
-arXiv URL: https://arxiv.org/pdf/{arxiv_id}.pdf
+Using your knowledge about natural language processing and the arxiv website, answer the following question related to this paper:
+Question: {question}
 
-My first question is: {question}"""
+When you cannot asnwer the question based on available information or the paper doesn't provide enough evidence, respond with only the word 'Unanswerable'.
+When you can answer with 'yes' or 'no', respond with only one word 'yes' or 'no'.
+When you can answer with a precise list of terms or numbers, respond with only the list of terms or numbers.
+"""
     return prompt
 
   def generate(self, user_prompt):
@@ -78,7 +93,7 @@ My first question is: {question}"""
         answer: the answer terms extracted from the bard response
     """
     chatGPT = revChatGPT()
-    system_prompt = f"""Act as a machine learning researcher. Your task is to extract a concise answer from long answer responses.
+    prompt = f"""You are a machine learning expert. You will answer questions about a machine learning paper by following the instructions of the user.
 Your response should only use information from the given answer. Do not rely on your own knowledge.
 You should respond with at most one sentence.
 You should only respond with the extracted terms and sentence.
@@ -91,8 +106,7 @@ My first question answer pair is:
 Question: {question}
 Answer: {self.answer}
 """
-    user_prompt = f"Your first task is to extract answer terms or sentence from the following long answer response:\n {self.answer}"
-    self.answer = chatGPT.generate(system_prompt, user_prompt)
+    self.answer = chatGPT.generate(prompt)
     return self.answer
   
   def sample(self, prompt, question_id, question):
