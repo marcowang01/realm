@@ -5,6 +5,28 @@ from tqdm import tqdm
 import sys
 import time
 
+# TODO: set up eval pipeline for three question types and have it run in the background maybe on liliths laptop
+  # make a new directory for evaluation results
+  # set up four modes for evaluation. pass new arg into the prompt creation and also sample and save to different files
+    # boolean, extractive/abstractive, unanswerable, and evidence
+  # run the eval loop for chatGPT (do bard for later)
+    # run 1000 question on awand chatGPT
+    # run with 15 seconds delay on bard and proxy GPT
+  
+# TODO: build out the pipeline for REALM using modal
+  # 1: understand langchain
+    # 1a: in corporate chroma onto langchain chain or build chain on my own
+  # 2: Hit chroma on modal
+    # 2a get the prompt back
+  # 3: run ingestion on modal
+ 
+  # 3: run final eval locally
+
+# TODO: improvements
+  # 1: privacy?
+  # 2: UI?
+  # 3: llama index? 
+  # 4: create something that is accessible to the public and to our own projects
 
 # run chatGPT on the test set
 # for each question, get the answer and evidence
