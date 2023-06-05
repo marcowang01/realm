@@ -1,45 +1,29 @@
 import json
-from chatBots.chatGPT import revChatGPT
-from chatBots.bard import revBard
+from customLLM import CustomLLM, ChatBotType, TaskType
+from prompts import PromptGenerator
 from tqdm import tqdm
 import sys
 import time
-
-# TODO: set up eval pipeline for three question types and have it run in the background maybe on liliths laptop
-  # make a new directory for evaluation results
-  # set up four modes for evaluation. pass new arg into the prompt creation and also sample and save to different files
-    # boolean, extractive/abstractive, unanswerable, and evidence
-  # run the eval loop for chatGPT (do bard for later)
-    # run 1000 question on awand chatGPT
-    # run with 15 seconds delay on bard and proxy GPT
   
 # TODO: build out the pipeline for REALM using modal
-  # 1: understand langchain
-    # 1a: in corporate chroma onto langchain chain or build chain on my own
-  # 2: Hit chroma on modal
-    # 2a get the prompt back
-  # 3: run ingestion on modal
- 
-  # 3: run final eval locally
-
-# TODO: improvements
-  # 1: privacy?
-  # 2: UI?
-  # 3: llama index? 
-  # 4: create something that is accessible to the public and to our own projects
+  # familiarize with existing code
+  # Step 1: transition modal to use langchain chroma vector store
+  #   1a: try out add, query, and delete
+  # Step 2: Run the instruct embedding on modal
+  # 2a: need to store the instruct XL somehow and run on T4 GPU
 
 # run chatGPT on the test set
 # for each question, get the answer and evidence
 # evaluate the answer and evidence
 # print the results
 
-TRIALS = 400
+TRIALS = 1000
 
-bard = revBard()
-chatGPT = revChatGPT()
+chatbot = ChatBotType.PAWAN
+# chatbot = ChatBotType.PROXY
+# chatbot = ChatBotType.BARD
 
-USE_GPT = True
-
+llm = CustomLLM(chatBot=chatbot)
 
 # load the test set
 path = "qasper/qasper-test-v0.3.json"
@@ -59,20 +43,21 @@ with tqdm(total=TRIALS, ncols=100, file=sys.stdout) as pbar:
       for qa in paper["qas"]:
         if count >= TRIALS:
           break
-        # print(f"begin question: {count + 1}/{TRIALS}")
         question = qa["question"]
         question_id = qa["question_id"]
+        # run LLM inference and save sample to disk
         try:
-          if USE_GPT:
-            prompt = chatGPT.createPropmt(title, abstract, question_id, question)
-            response = chatGPT.sample(prompt, question_id)
-          else:
-            prompt = bard.createPrompt(title, abstract, question_id, question)
-            response = bard.sample(prompt, question_id, question)
+          task = TaskType.FREEFORM
+
+          prompt = PromptGenerator(title, key, question).freeFormQA(chatbot)
+          llm(prompt)
+
+          result_path = f"out/{chatbot.name.lower()}_{task.name.lower()}_result.jsonl"
+          llm.sample(task, question_id, result_path)
         except Exception as e:
           # print the error
-          print(question_id)
-          print(f"inference error: {e}")
+          print(f"question {count}: {question_id}")
+          print(f"Inference error: {e}")
           continue
 
         count += 1

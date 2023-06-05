@@ -66,6 +66,7 @@ def create_and_get_collection(name):
     from botocore.exceptions import ClientError
     import zipfile
     import traceback
+    import shutil
 
     # check if chroma directory exists
     bucket_name = ""
@@ -94,7 +95,7 @@ def create_and_get_collection(name):
         bucket_name = os.environ['BUCKET_NAME']
         key = config.S3_KEY
         file_name = config.ZIP_FILE
-
+        # download zip file from s3 bucket and extract it into the right path
         try:
             s3 = boto3.client('s3')
             s3.download_file(bucket_name, key, file_name)
@@ -106,7 +107,7 @@ def create_and_get_collection(name):
         except ClientError as e:
             logger.error(f"Could not download file from S3 bucket: {e}")
             logger.error(traceback.format_exc())
-
+    # creates new instance of chromadb client
     chroma_dir = str(config.CHROMA_DIR)
     client = chromadb.Client(Settings(
         chroma_db_impl="duckdb+parquet",
@@ -173,6 +174,7 @@ def add_to_collection(name, documents):
     import zipfile
     import traceback
     import os
+    import time
 
     chroma_dir = str(config.CHROMA_DIR)
     client = chromadb.Client(Settings(
@@ -191,7 +193,8 @@ def add_to_collection(name, documents):
             embedding_function=openai_ef,
         )
         logger.info(f"adding to collection {name} locally...")
-
+        
+        # load in 1000 documents at a time
         num_chunks = (len(documents)-1) // config.CHUNK_SIZE + 1
         while num_chunks > 0:
             chunk_docs = []

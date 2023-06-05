@@ -1,0 +1,100 @@
+{"question_id": "397a1e851aab41c455c2b284f5e4947500d797f0", "predicted_answer": "Unanswerable. The ANTISCAM dataset is not mentioned or referenced in the paper.", "predicted_evidence": ["n/a"]}
+{"question_id": "cc8b4ed3985f9bfbe1b5d7761b31d9bd6a965444", "predicted_answer": "Intent is annotated using a simple slot tagging format.", "predicted_evidence": ["n/a"]}
+{"question_id": "f7662b11e87c1e051e13799413f3db459ac3e19c", "predicted_answer": "Baseline models such as Seq2Seq and its variants are outperformed by the proposed end-to-end trainable non-collaborative dialog system.", "predicted_evidence": ["n/a"]}
+{"question_id": "b584739622d0c53830e60430b13fd3ae6ff43669", "predicted_answer": "The paper does not provide information on the evaluation metrics and criteria used to evaluate the model performance. Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "2849c2944c47cf1de62b539c5d3c396a3e8d283a", "predicted_answer": "78.9% F1, slightly below the state of the art.", "predicted_evidence": ["n/a"]}
+{"question_id": "1a6156189297b2fe17f174ef55cbd20341bb7dbf", "predicted_answer": "They compare against three previous methods.", "predicted_evidence": ["n/a"]}
+{"question_id": "3319d56556ae1597a86384057db0831e32774b90", "predicted_answer": "AUC (Area Under the Curve)", "predicted_evidence": ["n/a"]}
+{"question_id": "8cbe3fa4ec0f66071e3d6b829b09b6395b631c44", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "85e417231a4bbb6691f7a89bd81710525f8fec4c", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "57ee20f494d8ce3fae46028c3f3551d180dba3e0", "predicted_answer": "English, Spanish, and German.", "predicted_evidence": ["n/a"]}
+{"question_id": "2974237446d04da33b78ce6d22a477cdf80877b7", "predicted_answer": "Rumors are defined as \"information whose veracity is unverified or has been disputed, but has swiftly propagated regardless of its authenticity.\u201d", "predicted_evidence": ["n/a"]}
+{"question_id": "bc8526d4805e2554adb2e9c01736d3f3a3b19895", "predicted_answer": "They compared their Sentence Level Recurrent Topic Model (SLRTM) with two baselines: Latent Dirichlet Allocation (LDA) and Sentence Level Recurrent Neural Network Language Model (SLRNNLM).", "predicted_evidence": ["n/a"]}
+{"question_id": "a0fd0c0fe042ad045b8d5095c81643ef3a352b81", "predicted_answer": "The paper explores topic modeling and language modeling tasks.", "predicted_evidence": ["n/a"]}
+{"question_id": "6e040e80f2da69d50386a90a38ed6d2fa4f77bbd", "predicted_answer": "OntoNotes 5.0.", "predicted_evidence": ["n/a"]}
+{"question_id": "aebd1f0d728d0de5f76238844da044a44109f76f", "predicted_answer": "They use Relative Positional Embeddings to incorporate direction and relative distance.", "predicted_evidence": ["n/a"]}
+{"question_id": "cb4086ad022197da79f28dc609d0de90108c4543", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "756a8a9125e6984e0ca768b653c6c760efa3db66", "predicted_answer": "Unanswerable. The paper does not provide any information about an accuracy score.", "predicted_evidence": ["n/a"]}
+{"question_id": "fe52b093735bb456d7e699aa9a2b806d2b498ba0", "predicted_answer": "Unanswerable. The paper does not provide information or evidence related to the state-of-the-art systems for any specific task.", "predicted_evidence": ["n/a"]}
+{"question_id": "7748c072e07d6c6db5a34be38b4a5e97ac6d7999", "predicted_answer": "TREC-QA dataset.", "predicted_evidence": ["n/a"]}
+{"question_id": "c97306c1be5d59cf27b1054adfa8f1da47d292ce", "predicted_answer": "Contributions: Hands-on comparison of deep learning approaches for Italian event detection; comparison with traditional machine learning approaches.", "predicted_evidence": ["n/a"]}
+{"question_id": "e42916924b69cab1df25d3b4e6072feaa0ba8084", "predicted_answer": "The paper uses two baseline systems for Italian event detection: a rule-based system and a Support Vector Machine (SVM) classifier.", "predicted_evidence": ["n/a"]}
+{"question_id": "079ca5810060e1cdc12b5935d8c248492f0478b9", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "a3e7d7389228a197c8c44e0c504a791b60f2c80d", "predicted_answer": "They use the top words in each cluster as well as manual inspection to decide the semantic concept label of the particular cluster.", "predicted_evidence": ["n/a"]}
+{"question_id": "8b4bd0a962241ea548752212ebac145e2ced7452", "predicted_answer": "They use hierarchical agglomerative clustering.", "predicted_evidence": ["n/a"]}
+{"question_id": "d39059340a79bdc0ebab80ad3308e3037d7d5773", "predicted_answer": "Two introduced datasets are not mentioned in the paper. Therefore, the answer is 'Unanswerable'.", "predicted_evidence": ["n/a"]}
+{"question_id": "31d4b0204702907dc0cd0f394cf9c984649e1fbf", "predicted_answer": "The authors used strong baselines including logistic regression and support vector machines (SVM) in their experiments.", "predicted_evidence": ["n/a"]}
+{"question_id": "371433bd3fb5042bacec4dfad3cfff66147c14f0", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "f64449a21c452bc5395a0f0a49fb49825e6385f4", "predicted_answer": "The authors gathered 2912 responses from crowdsourcing.", "predicted_evidence": ["n/a"]}
+{"question_id": "3aeb25e334c8129b376f11c7077bcb2dd54f7e0e", "predicted_answer": "6", "predicted_evidence": ["n/a"]}
+{"question_id": "c19e9fd2f1c969e023fb99b74e78eb1f3db8e162", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "230ff86b7b90b87c33c53014bb1e9c582dfc107f", "predicted_answer": "Turkish, Hungarian, Russian, Finnish, Estonian, German and Croatian.", "predicted_evidence": ["n/a"]}
+{"question_id": "dc23006d67f20f430f1483398de4a89c0be4efe2", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "887d7f3edf37ccc6bf2e755dae418b04d2309686", "predicted_answer": "Character-level features.", "predicted_evidence": ["n/a"]}
+{"question_id": "b8a3ab219be6c1e6893fe80e1fbf14f0c0c3c97c", "predicted_answer": "The paper uses several datasets: PubFig-10; FigureQA; and a new dataset, SciFig.", "predicted_evidence": ["n/a"]}
+{"question_id": "780c7993d446cd63907bb38992a60bbac9cb42b1", "predicted_answer": "English.", "predicted_evidence": ["n/a"]}
+{"question_id": "3da4606a884593f7702d098277b9a6ce207c080b", "predicted_answer": "Approaches to detecting and separating texts, scientific axis region and scientific figure region are explored.", "predicted_evidence": ["n/a"]}
+{"question_id": "91336f12ab94a844b66b607f8621eb8bbd209f32", "predicted_answer": "Baseline methods: Bi-Encoder, BERT and ALBERT.", "predicted_evidence": ["n/a"]}
+{"question_id": "c5221bb28e58a4f13cf2eccce0e1b1bec7dd3c13", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "42a4ab4607a9eec42c427a817b7e898230d26444", "predicted_answer": "The figures and captions come from scientific articles.", "predicted_evidence": ["n/a"]}
+{"question_id": "622efbecd9350a0f4487bdff2b8b362ef2541f3c", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "f54e19f7ecece1bb0ef3171403ae322ad572ff00", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "4137a82d7752be7a6c142ceb48ce784fd475fb06", "predicted_answer": "The paper EmoAtt at EmoInt-2017 does not provide information about the baseline. Therefore, the answer is 'Unanswerable.'", "predicted_evidence": ["n/a"]}
+{"question_id": "6c50871294562e4886ede804574e6acfa8d1a5f9", "predicted_answer": "Their result was an improvement in emotion intensity prediction performance compared to the baseline model.", "predicted_evidence": ["n/a"]}
+{"question_id": "0ac6fbd81e2dd95b800283dc7e59ce969d45fc02", "predicted_answer": "WASSA-2017 Shared Task on Emotion Intensity was used.", "predicted_evidence": ["n/a"]}
+{"question_id": "ed44f7e698d6124cb86791841d02fc6f8b4d862a", "predicted_answer": "\"Unanswerable\". The paper does not provide a specific definition of hate speech, rather it focuses on developing a hate speech analysis system for multiple languages and aspects.", "predicted_evidence": ["n/a"]}
+{"question_id": "d9e7633004ed1bc1ee45be58409bcc1fa6db59b2", "predicted_answer": "English, Spanish, Italian, German and French.", "predicted_evidence": ["n/a"]}
+{"question_id": "c58ef13abe5fa91a761362ca962d7290312c74e4", "predicted_answer": "Aspect-based analysis of hate speech.", "predicted_evidence": ["n/a"]}
+{"question_id": "9ef0d2365bde0d18054511fbb53cec5fa2cda5ee", "predicted_answer": "1. In the paper \"Multilingual and Multi-Aspect Hate Speech Analysis\" with arXiv ID: 1908.11049, the size of their dataset is 30K (30,000) instances.", "predicted_evidence": ["n/a"]}
+{"question_id": "cbb3c1c1e6e1818b6480f929f1c299eaa5ffd07a", "predicted_answer": "Opportunities presented by the use of Semantic Web technologies in Machine Translation: Knowledge Representation, Domain Adaptation, Multilinguality, Heterogeneity.", "predicted_evidence": ["n/a"]}
+{"question_id": "9f74f3991b8681619d95ab93a7c8733a843ddffe", "predicted_answer": "Lack of multilingual Semantic Web resources and difficulty in aligning them with machine translation systems are the challenges associated with the use of Semantic Web technologies in Machine Translation.", "predicted_evidence": ["n/a"]}
+{"question_id": "7c2c15ea3f1b1375b8aaef1103a001069d9915bb", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "a77d38427639d54461ae308f3045434f81e497d0", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "010fd15696580d9924ac0275a4ff269005e5808d", "predicted_answer": "Baselines for the paper \"Advancing Speech Recognition With No Speech Or With Noisy Speech\" were not explicitly mentioned.", "predicted_evidence": ["n/a"]}
+{"question_id": "d36a6447bfe58204e0d29f9213d84be04d875624", "predicted_answer": "LibriSpeech dataset.", "predicted_evidence": ["n/a"]}
+{"question_id": "5ed02ae6c534cd49d405489990f0e4ba0330ff1b", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "f6346828c2f44529dc307abf04dd246bfeb4a9b2", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "935873b97872820b7b6100d6a785fba286b94900", "predicted_answer": "AG's News, DBPedia, Yelp P.", "predicted_evidence": ["n/a"]}
+{"question_id": "f2bcfdbebb418e7da165c19b8c7167719432ee48", "predicted_answer": "Sentence and document summarization.", "predicted_evidence": ["n/a"]}
+{"question_id": "0fe49431db5ffaa24372919daf24d8f84117bfda", "predicted_answer": "CNN and Daily Mail dataset.", "predicted_evidence": ["n/a"]}
+{"question_id": "0f9c1586f1b4b531fa4fd113e767d06af90b1ae8", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "52faf319e37aa15fff1ab47f634a5a584dc42e75", "predicted_answer": "List of commonsense knowledge.", "predicted_evidence": ["n/a"]}
+{"question_id": "0c7cb3010ed92b8d46583a67e72946a6c0115f1f", "predicted_answer": "The paper defines intrinsic geometry of spaces of learned representations as the properties of the learned representations that are invariant with respect to transformation of the input data.", "predicted_evidence": ["n/a"]}
+{"question_id": "9c2cacf77041e02d38f92a4c490df1e04552f96f", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "35cdaa0fff007add4a795850b139df80af7d1ffc", "predicted_answer": "Lexical, syntactic, and semantic features.", "predicted_evidence": ["n/a"]}
+{"question_id": "3de3a083b8ba3086792d38ae9667e095070f7f37", "predicted_answer": "20.", "predicted_evidence": ["n/a"]}
+{"question_id": "04914917d01c9cd8718cd551dc253eb3827915d8", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "20632fc4d2b693b5aabfbbc99ee5c1e9fc485dea", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "a57e266c936e438aeeab5e8d20d9edd1c15a32ee", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "27356a99290fcc01e3e5660af3405d2a6c6f6e7c", "predicted_answer": "The expert and crowd-sourced annotations are compared to one another using various metrics such as inter-annotator agreement and accuracy.", "predicted_evidence": ["n/a"]}
+{"question_id": "6e37f43f4f54ffc77c785d60c6058fbad2147922", "predicted_answer": "Amazon Mechanical Turk.", "predicted_evidence": ["n/a"]}
+{"question_id": "fff1ed2435ba622d884ecde377ff2de127167638", "predicted_answer": "Trained experts are individuals who have appropriate training in the given domain and are involved in the development of the dataset in the paper.", "predicted_evidence": ["n/a"]}
+{"question_id": "7ff7c286d3118a8be5688e2d18e9a56fe83679ad", "predicted_answer": "Convolutional Neural Network.", "predicted_evidence": ["n/a"]}
+{"question_id": "1ecbbb60dc44a701e9c57c22167dd412711bb0be", "predicted_answer": "Webis-CPC-11 dataset.", "predicted_evidence": ["n/a"]}
+{"question_id": "592df9831692b8fde213257ed1894344da3e0594", "predicted_answer": "Across annotators.", "predicted_evidence": ["n/a"]}
+{"question_id": "6822ca5f7a19866ffc3c985b790a4aadcecf2d1c", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "60e6296ca2a697892bd67558a21a83ef01a38177", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "9b868c7d17852f46a8fe725f24cb9548fdbd2b05", "predicted_answer": "Conceptual Captions dataset.", "predicted_evidence": ["n/a"]}
+{"question_id": "243cf21c4e34c4b91fcc4905aa4dc15a72087f0c", "predicted_answer": "45 million.", "predicted_evidence": ["n/a"]}
+{"question_id": "488e3c4fd1103c46e12815d1bf414a0356fb0d0e", "predicted_answer": "The features derived from the videos in this paper are visual features.", "predicted_evidence": ["n/a"]}
+{"question_id": "84765903b8c7234ca2919d0a40e3c6a5bcedf45d", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "38363a7ed250bc729508c4c1dc975696a65c53cb", "predicted_answer": "Term: Transformer models.", "predicted_evidence": ["n/a"]}
+{"question_id": "e862ebfdb1b3425af65fec81c8984edca6f89a76", "predicted_answer": "Symbolic rewriting refers to the process of transforming or manipulating symbolic expressions or formulas using a set of predefined rules.", "predicted_evidence": ["n/a"]}
+{"question_id": "ec8f39d32084996ab825debd7113c71daac38b06", "predicted_answer": "Anchored Correlation Explanation incorporates expert knowledge into their topic model.", "predicted_evidence": ["n/a"]}
+{"question_id": "a67a2d9acad1787b636ca2681330f4c29a0b0254", "predicted_answer": "20Newsgroups, NIPS, and Reuters-21578.", "predicted_evidence": ["n/a"]}
+{"question_id": "1efaf3bcd66d1b6bdfb124f0cec0cfeee27e6124", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "fcdbaa08cccda9968f3fd433c99338cc60f596a7", "predicted_answer": "The F-score obtained for named entity recognition in Chinese social media using the F-Score Driven Max Margin Neural Network was 60.32.", "predicted_evidence": ["n/a"]}
+{"question_id": "2e4688205c8e344cded7a053b6014cce04ef1bd5", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "fc436a4f3674e42fb280378314bfe77ba0c99f2e", "predicted_answer": "We cannot answer this question based on the available information.", "predicted_evidence": ["n/a"]}
+{"question_id": "a71fb012631e6a8854d5945b6d0ab2ab8e7b7ee6", "predicted_answer": "We cannot answer this question based on the available information or the paper doesn't provide enough evidence.", "predicted_evidence": ["n/a"]}
+{"question_id": "b70e4c49300dc3eab18e907ab903afd2a0c6075a", "predicted_answer": "Summarizing Table 6 of the paper, the five downstream tasks are: WMT14 English-German, WMT14 English-French, WMT16 English-Romanian, IWSLT14 English-Vietnamese, and WMT18 English-Russian.", "predicted_evidence": ["n/a"]}
+{"question_id": "088d42ecb1e15515f6a97a0da2fed81b61d61a23", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "8599d6d14ac157169920c73b98a79737c7a68cf5", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "f1d61b44105e651925d02a51e6d7ea10ea28ebd8", "predicted_answer": "They selected the 50 languages based on the availability of parallel corpora and the diversity of the languages.", "predicted_evidence": ["n/a"]}
+{"question_id": "108f99fcaf620fab53077812e8901870896acf36", "predicted_answer": "Dialogue quality metrics and user perception surveys.", "predicted_evidence": ["n/a"]}
+{"question_id": "6c8dc31a199b155e73c84173816c1e252137a0af", "predicted_answer": "Unanswerable. The paper does not provide information on how much their cross-lingual models lag behind other models.", "predicted_evidence": ["n/a"]}
+{"question_id": "7125db8334a7efaf9f7753f2c2f0048a56e74c49", "predicted_answer": "They use Google Cloud Translate and Microsoft Azure Cognitive Services as translation pipelines to compare against.", "predicted_evidence": ["n/a"]}
+{"question_id": "43729be0effb5defc62bae930ceacf7219934f1e", "predicted_answer": "English, Spanish, German, French, Italian and Chinese.", "predicted_evidence": ["n/a"]}
+{"question_id": "ae2142ee9e093ce485025168f4bcb3da4602739d", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "ebe1084a06abdabefffc66f029eeb0b69f114fd9", "predicted_answer": "Baseline models are Google\u2019s Transformer and OpenNMT-tf.", "predicted_evidence": ["n/a"]}
+{"question_id": "cfdd583d01abaca923f5c466bb20e1d4b8c749ff", "predicted_answer": "Context-aware models for pronoun translation were experimented with in the study.", "predicted_evidence": ["n/a"]}

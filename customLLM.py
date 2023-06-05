@@ -3,6 +3,7 @@ from enum import Enum
 import requests
 import json
 import time
+import re
 
 from langchain.callbacks.manager import CallbackManagerForLLMRun
 from langchain.llms.base import LLM
@@ -26,6 +27,12 @@ class ChatBotType(Enum):
   PROXY = 2 # https://github.com/acheong08/ChatGPT, https://github.com/acheong08/ChatGPT-Proxy-V4
   PAWAN = 3 # https://github.com/PawanOsman/ChatGPT
 
+class TaskType(Enum):
+  FREEFORM = 1
+  BOOLEAN = 2
+  UNANS = 3
+  EVIDENCE = 4
+
 class CustomLLM(LLM):
   """
     Custom LLM for using a chatbot API as a language model.
@@ -34,7 +41,7 @@ class CustomLLM(LLM):
       sample: generate a response from the model given a prompt.
       createPrompt: generate prompt for a given evaluation case.
   """
-  chatBot: ChatBotType
+  chatBot: ChatBotType = ChatBotType.PAWAN
   # set up reverse api chatbot instances
   bard = Bard(token=BARD_ACCESS_TOKEN)
   proxyGPT = Chatbot(
@@ -77,7 +84,8 @@ class CustomLLM(LLM):
         answer = data["message"]
 
     elif self.chatBot == ChatBotType.PAWAN:
-      system_prompt = "You are a helpful assistant"
+      # system_prompt = "You are a helpful assistant."
+      system_prompt = "You are a model trained on diverse datasets, you have the ability to provide insights on a wide range of topics, including machine learning."
       headers = {
         "Authorization": f"Bearer {PAWAN_API_KEY}",
         "Content-Type": "application/json",
@@ -106,7 +114,7 @@ class CustomLLM(LLM):
     self.answer = answer
     return answer
   
-  def sample(self, prompt: str, question_id: str, path: str) -> List[str]:
+  def sample(self, taskType: TaskType, question_id: str, path: str) -> List[str]:
     """
       Generate a sample for the QA task
 
@@ -115,7 +123,39 @@ class CustomLLM(LLM):
         question_id: The id of the question on the QASPER dataset
         path: The path to the jsonl file save the sample to
     """
-    pass
+    json_data = {}
+    if taskType == TaskType.FREEFORM:
+      json_data = {
+        "question_id": question_id,
+        "predicted_answer": self.answer,
+        "predicted_evidence": ["n/a"],
+      }
+    elif taskType == TaskType.EVIDENCE:
+      
+      # Find the substring between "Answer:" and "Evidence:"
+      start_index = self.answer.find("Answer:")
+      if start_index == -1:
+          raise ValueError("Answer not found in the input string")
+
+      start_index += len("Answer:")
+      end_index = self.answer.find("Evidence:", start_index)
+      if end_index == -1:
+          raise ValueError("Evidence not found in the input string")
+
+      answer_substring = self.answer[start_index:end_index].strip()
+
+      # Find the substring after "Evidence:"
+      evidence_substring = self.answer[end_index + len("Evidence:"):].strip()
+
+      json_data = {
+        "question_id": question_id,
+        "predicted_answer": answer_substring,
+        "predicted_evidence": [evidence_substring],
+      }
+    
+    with open(path, "a") as f:
+      f.write(json.dumps(json_data) + '\n')
+      
 
   @property
   def _identifying_params(self) -> Mapping[str, Any]:

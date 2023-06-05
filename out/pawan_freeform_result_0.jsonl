@@ -1,0 +1,100 @@
+{"question_id": "753990d0b621d390ed58f20c4d9e4f065f0dc672", "predicted_answer": "The seed lexicon is a small set of affect words.", "predicted_evidence": ["n/a"]}
+{"question_id": "9d578ddccc27dd849244d632dd0f6bf27348ad81", "predicted_answer": "The proposed approach achieved significant improvement in F1 score on all affect categories on SemEval test data compared to the baseline and prior approaches.", "predicted_evidence": ["n/a"]}
+{"question_id": "02e4bf719b1a504e385c35c6186742e720bcb281", "predicted_answer": "Relations are used to propagate polarity by transferring the polarity of one event to other events through discourse relations such as temporal and causal relations.", "predicted_evidence": ["n/a"]}
+{"question_id": "44c4bd6decc86f1091b5fc0728873d9324cdde4e", "predicted_answer": "The Japanese dataset is comprised of 21,116 sentences.", "predicted_evidence": ["n/a"]}
+{"question_id": "86abeff85f3db79cf87a8c993e5e5aa61226dc98", "predicted_answer": "The dataset contains discourse relations annotated with emotion labels.", "predicted_evidence": ["n/a"]}
+{"question_id": "c029deb7f99756d2669abad0a349d917428e9c12", "predicted_answer": "The improvements in F1 scores for minimally supervised learning are approximately 3-5% compared to basic supervised learning using smaller labeled data.", "predicted_evidence": ["n/a"]}
+{"question_id": "39f8db10d949c6b477fa4b51e7c184016505884f", "predicted_answer": "Their model learns using a neural network that takes raw text input and predicts affective events using discourse relations.", "predicted_evidence": ["n/a"]}
+{"question_id": "d0bc782961567dc1dd7e074b621a6d6be44bb5b4", "predicted_answer": "There are 577 seed words in the seed lexicon used for training.", "predicted_evidence": ["n/a"]}
+{"question_id": "a592498ba2fac994cd6fad7372836f0adb37e22a", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "3a9d391d25cde8af3334ac62d478b36b30079d74", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "8d8300d88283c73424c8f301ad9fdd733845eb47", "predicted_answer": "The annotation experiment is evaluated in terms of inter-annotator agreement using Fleiss' kappa coefficient.", "predicted_evidence": ["n/a"]}
+{"question_id": "48b12eb53e2d507343f19b8a667696a39b719807", "predicted_answer": "Joy, sadness, surprise, disgust, anger, and fear.", "predicted_evidence": ["n/a"]}
+{"question_id": "003f884d3893532f8c302431c9f70be6f64d9be8", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "bb97537a0a7c8f12a3f65eba73cefa6abcd2f2b2", "predicted_answer": "The paper examines how the various social phenomena manifest in both homogenous and diverse communities.", "predicted_evidence": ["n/a"]}
+{"question_id": "eea089baedc0ce80731c8fdcb064b82f584f483a", "predicted_answer": "They observe that user engagement varies with the community's features such as age, size, and focus.", "predicted_evidence": ["n/a"]}
+{"question_id": "edb2d24d6d10af13931b3a47a6543bd469752f0c", "predicted_answer": "The authors used a Random Walk with Restart algorithm to identify 300 Reddit communities to compare.", "predicted_evidence": ["n/a"]}
+{"question_id": "938cf30c4f1d14fa182e82919e16072fdbcf2a82", "predicted_answer": "The authors measure how temporally dynamic a community is by calculating the entropy of inter-community transitions.", "predicted_evidence": ["n/a"]}
+{"question_id": "93f4ad6568207c9bd10d712a52f8de25b3ebadd4", "predicted_answer": "The authors measure how distinctive a community is by calculating the Z-score of the community's users' average activity level in the community compared to their activity level in other communities.", "predicted_evidence": ["n/a"]}
+{"question_id": "71a7153e12879defa186bfb6dbafe79c74265e10", "predicted_answer": "The language model is pretrained on large corpora of general domain text, such as the English language Wikipedia and BooksCorpus.", "predicted_evidence": ["n/a"]}
+{"question_id": "85d1831c28d3c19c84472589a252e28e9884500f", "predicted_answer": "The proposed model is compared against traditional feature-based methods and a state-of-the-art neural network model.", "predicted_evidence": ["n/a"]}
+{"question_id": "1959e0ebc21fafdf1dd20c6ea054161ba7446f61", "predicted_answer": "The clinical text structuring task is defined as organizing a clinical report into a hierarchical structure containing sections such as patient history, examination, diagnosis, and treatment.", "predicted_evidence": ["n/a"]}
+{"question_id": "77cf4379106463b6ebcb5eb8fa5bb25450fa5fb8", "predicted_answer": "Clinical text structuring and question answering.", "predicted_evidence": ["n/a"]}
+{"question_id": "06095a4dee77e9a570837b35fc38e77228664f91", "predicted_answer": "There are unrelated sentences in between questions.", "predicted_evidence": ["n/a"]}
+{"question_id": "19c9cfbc4f29104200393e848b7b9be41913a7ac", "predicted_answer": "There are 2,455 questions in the dataset.", "predicted_evidence": ["n/a"]}
+{"question_id": "6743c1dd7764fc652cfe2ea29097ea09b5544bc3", "predicted_answer": "The tasks evaluated in the paper are clinical text classification and information extraction, and question-answering on electronic health records.", "predicted_evidence": ["n/a"]}
+{"question_id": "14323046220b2aea8f15fba86819cbccc389ed8b", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "08a5f8d36298b57f6a4fcb4b6ae5796dc5d944a4", "predicted_answer": "They introduce domain-specific features by fine-tuning the pre-trained language model on domain-specific data.", "predicted_evidence": ["n/a"]}
+{"question_id": "975a4ac9773a4af551142c324b64a0858670d06e", "predicted_answer": "The QA-CTS task dataset contains a total of 7,177 clinical notes from MIMIC-III.", "predicted_evidence": ["n/a"]}
+{"question_id": "326e08a0f5753b90622902bd4a9c94849a24b773", "predicted_answer": "The dataset contains 2,216 pathology reports collected from Ruijing Hospital.", "predicted_evidence": ["n/a"]}
+{"question_id": "bd78483a746fda4805a7678286f82d9621bc45cf", "predicted_answer": "Bidirectional Encoder Representations from Transformers (BERT) and GPT-2 are strong baseline models in specific tasks.", "predicted_evidence": ["n/a"]}
+{"question_id": "dd155f01f6f4a14f9d25afc97504aefdc6d29c13", "predicted_answer": "Different language models have been compared on aspects such as performance on standard benchmarks, computational efficiency, and robustness to adversarial attacks.", "predicted_evidence": ["n/a"]}
+{"question_id": "a9d530d68fb45b52d9bad9da2cd139db5a4b2f7c", "predicted_answer": "n-gram models, log-bilinear models, and matrix factorization models.", "predicted_evidence": ["n/a"]}
+{"question_id": "e07df8f613dbd567a35318cd6f6f4cb959f5c82d", "predicted_answer": "Perplexity.", "predicted_evidence": ["n/a"]}
+{"question_id": "1a43df221a567869964ad3b275de30af2ac35598", "predicted_answer": "Yelp challenge dataset.", "predicted_evidence": ["n/a"]}
+{"question_id": "98b11f70239ef0e22511a3ecf6e413ecb726f954", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "d4d771bcb59bab4f3eb9026cda7d182eb582027d", "predicted_answer": "The paper does not use NMT (neural machine translation) to ensure generated reviews stay on topic. Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "12f1919a3e8ca460b931c6cacc268a926399dff4", "predicted_answer": "The authors use a classifier model for detection.", "predicted_evidence": ["n/a"]}
+{"question_id": "cd1034c183edf630018f47ff70b48d74d2bb1649", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "bd9930a613dd36646e2fc016b6eb21ab34c77621", "predicted_answer": "300.", "predicted_evidence": ["n/a"]}
+{"question_id": "6e2ad9ad88cceabb6977222f5e090ece36aa84ea", "predicted_answer": "They compared their model with two baselines: TextRank and Seq2Seq.", "predicted_evidence": ["n/a"]}
+{"question_id": "aacb0b97aed6fc6a8b471b8c2e5c4ddb60988bf5", "predicted_answer": "The model has two attention layers.", "predicted_evidence": ["n/a"]}
+{"question_id": "710c1f8d4c137c8dad9972f5ceacdbf8004db208", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "47726be8641e1b864f17f85db9644ce676861576", "predicted_answer": "Embedding quality is assessed through intrinsic and extrinsic evaluations.", "predicted_evidence": ["n/a"]}
+{"question_id": "8958465d1eaf81c8b781ba4d764a4f5329f026aa", "predicted_answer": "Stereotype bias, counter-stereotypical bias, and intersectional bias.", "predicted_evidence": ["n/a"]}
+{"question_id": "31b6544346e9a31d656e197ad01756813ee89422", "predicted_answer": "The observation that different words can share similar contexts and that words can have multiple senses contribute to the more robust algorithm.", "predicted_evidence": ["n/a"]}
+{"question_id": "347e86893e8002024c2d10f618ca98e14689675f", "predicted_answer": "High quality data.", "predicted_evidence": ["n/a"]}
+{"question_id": "10091275f777e0c2890c3ac0fd0a7d8e266b57cf", "predicted_answer": "The model is improved more by massive data than by quality.", "predicted_evidence": ["n/a"]}
+{"question_id": "cbf1137912a47262314c94d36ced3232d5fa1926", "predicted_answer": "FastText and Word2Vec.", "predicted_evidence": ["n/a"]}
+{"question_id": "519db0922376ce1e87fcdedaa626d665d9f3e8ce", "predicted_answer": "European Portuguese.", "predicted_evidence": ["n/a"]}
+{"question_id": "99a10823623f78dbff9ccecb210f187105a196e9", "predicted_answer": "The word embeddings were trained on two different Portuguese corpora.", "predicted_evidence": ["n/a"]}
+{"question_id": "09f0dce416a1e40cc6a24a8b42a802747d2c9363", "predicted_answer": "FastText embeddings.", "predicted_evidence": ["n/a"]}
+{"question_id": "ac706631f2b3fa39bf173cd62480072601e44f66", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "8b71ede8170162883f785040e8628a97fc6b5bcb", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "fa2a384a23f5d0fe114ef6a39dced139bddac20e", "predicted_answer": "The dataset contains 69,067 court decisions.", "predicted_evidence": ["n/a"]}
+{"question_id": "53712f0ce764633dbb034e550bb6604f15c0cacd", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "0bffc3d82d02910d4816c16b390125e5df55fd01", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "bdd8368debcb1bdad14c454aaf96695ac5186b09", "predicted_answer": "The intensity of the PTSD is established using the PTSD Checklist-Civilian (PCL-C) questionnaire.", "predicted_evidence": ["n/a"]}
+{"question_id": "3334f50fe1796ce0df9dd58540e9c08be5856c23", "predicted_answer": "LIWC is used as a feature in this system.", "predicted_evidence": ["n/a"]}
+{"question_id": "7081b6909cb87b58a7b85017a2278275be58bf60", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "1870f871a5bcea418c44f81f352897a2f53d0971", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "ce6201435cc1196ad72b742db92abd709e0f9e8d", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "928828544e38fe26c53d81d1b9c70a9fb1cc3feb", "predicted_answer": "The size of the dataset is 47,053 documents.", "predicted_evidence": ["n/a"]}
+{"question_id": "4f243056e63a74d1349488983dc1238228ca76a7", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "8f87215f4709ee1eb9ddcc7900c6c054c970160b", "predicted_answer": "Quality is measured in terms of the accuracy achieved by the model on the held-out set for sentiment analysis task.", "predicted_evidence": ["n/a"]}
+{"question_id": "b04098f7507efdffcbabd600391ef32318da28b3", "predicted_answer": "1000+ languages.", "predicted_evidence": ["n/a"]}
+{"question_id": "8fc14714eb83817341ada708b9a0b6b4c6ab5023", "predicted_answer": "They compare their approach with 8 other sentiment sources.", "predicted_evidence": ["n/a"]}
+{"question_id": "d94ac550dfdb9e4bbe04392156065c072b9d75e1", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "eeb6e0caa4cf5fdd887e1930e22c816b99306473", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "3c0eaa2e24c1442d988814318de5f25729696ef5", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "dc1fe3359faa2d7daa891c1df33df85558bc461b", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "922f1b740f8b13fdc8371e2a275269a44c86195e", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "b39f2249a1489a2cef74155496511cc5d1b2a73d", "predicted_answer": "The accuracy reported by state-of-the-art methods ranges from 81.4% to 95.0%.", "predicted_evidence": ["n/a"]}
+{"question_id": "591231d75ff492160958f8aa1e6bfcbbcd85a776", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "9e805020132d950b54531b1a2620f61552f06114", "predicted_answer": "The method is compared with the unsupervised model of Artetxe et al. (2018) and with a dictionary lookup baseline.", "predicted_evidence": ["n/a"]}
+{"question_id": "95abda842c4df95b4c5e84ac7d04942f1250b571", "predicted_answer": "The multi-lingual caption model uses English, French, and German.", "predicted_evidence": ["n/a"]}
+{"question_id": "2419b38624201d678c530eba877c0c016cccd49f", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "b99d100d17e2a121c3c8ff789971ce66d1d40a4d", "predicted_answer": "They compared their AraNet toolkit with three other commonly used sentiment analysis models, SVM, Na\u00efve Bayes, and Bi-LSTM.", "predicted_evidence": ["n/a"]}
+{"question_id": "578d0b23cb983b445b1a256a34f969b34d332075", "predicted_answer": "The paper uses four datasets in training: GCC, ArSenTD-LEV , ArSenTD-ORIG , and ArSenTD-Dr-Ahmed.", "predicted_evidence": ["n/a"]}
+{"question_id": "6548db45fc28e8a8b51f114635bad14a13eaec5b", "predicted_answer": "The authors use a conditioning GAN (cGAN).", "predicted_evidence": ["n/a"]}
+{"question_id": "4c4f76837d1329835df88b0921f4fe8bda26606f", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "819d2e97f54afcc7cdb3d894a072bcadfba9b747", "predicted_answer": "The authors use two corpora, namely, The Complete Works of William Shakespeare and Wikipedia Dump of February 2017.", "predicted_evidence": ["n/a"]}
+{"question_id": "637aa32a34b20b4b0f1b5dfa08ef4e0e5ed33d52", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "4b8257cdd9a60087fa901da1f4250e7d910896df", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}
+{"question_id": "7e161d9facd100544fa339b06f656eb2fc64ed28", "predicted_answer": "Two.", "predicted_evidence": ["n/a"]}
+{"question_id": "abc5836c54fc2ac8465aee5a83b9c0f86c6fd6f5", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "4debd7926941f1a02266b1a7be2df8ba6e79311a", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "3b745f086fb5849e7ce7ce2c02ccbde7cfdedda5", "predicted_answer": "They outperform other models by 1.25% in sentiment classification and 1.51% in intent classification tasks.", "predicted_evidence": ["n/a"]}
+{"question_id": "44c7c1fbac80eaea736622913d65fe6453d72828", "predicted_answer": "The sample size used to measure user satisfaction is 184 participants.", "predicted_evidence": ["n/a"]}
+{"question_id": "3e0c9469821cb01a75e1818f2acb668d071fcf40", "predicted_answer": "The paper mentions three metrics to measure user engagement: 1) Dialogue Length, 2) Turn Length and 3) GPT-2 Score.", "predicted_evidence": ["n/a"]}
+{"question_id": "a725246bac4625e6fe99ea236a96ccb21b5f30c6", "predicted_answer": "The system designs introduced are Gunrock, a social bot for complex and engaging long conversations.", "predicted_evidence": ["n/a"]}
+{"question_id": "516626825e51ca1e8a3e0ac896c538c9d8a747c8", "predicted_answer": "Yes. They use a hierarchical sequence-to-sequence model.", "predicted_evidence": ["n/a"]}
+{"question_id": "77af93200138f46bb178c02f710944a01ed86481", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "71538776757a32eee930d297f6667cd0ec2e9231", "predicted_answer": "They use a binary classifier trained on a dataset of user satisfaction labels to predict the satisfaction level of a user based on the generated backstory query.", "predicted_evidence": ["n/a"]}
+{"question_id": "830de0bd007c4135302138ffa8f4843e4915e440", "predicted_answer": "Yes.", "predicted_evidence": ["n/a"]}
+{"question_id": "680dc3e56d1dc4af46512284b9996a1056f89ded", "predicted_answer": "The baseline for the experiments is a logistic regression model trained on bag-of-words features.", "predicted_evidence": ["n/a"]}
+{"question_id": "bd5379047c2cf090bea838c67b6ed44773bcd56f", "predicted_answer": "The paper performs two experiments.", "predicted_evidence": ["n/a"]}
+{"question_id": "7aa8375cdf4690fc3b9b1799b0f5a9ec1c1736ed", "predicted_answer": "No.", "predicted_evidence": ["n/a"]}
+{"question_id": "3ac30bd7476d759ea5d9a5abf696d4dfc480175b", "predicted_answer": "They use a 4-gram language model and a neural language model.", "predicted_evidence": ["n/a"]}
+{"question_id": "0e57a0983b4731eba9470ba964d131045c8c7ea7", "predicted_answer": "Human judges were asked if a given sentence was naturally occurring or if it had been generated by a machine.", "predicted_evidence": ["n/a"]}
+{"question_id": "f0317e48dafe117829e88e54ed2edab24b86edb1", "predicted_answer": "Unanswerable.", "predicted_evidence": ["n/a"]}

@@ -1,4 +1,5 @@
 python ./qasper/qasper_evaluator.py --predictions chatGPT_response.jsonl --gold ./qasper/qasper-train-v0.3.json --text_evidence_only
+python ./qasper/qasper_evaluator.py --predictions ./out/pawan_evidence_result.jsonl --gold ./qasper/qasper-train-v0.3.json --text_evidence_only
 
 python ./qasper/qasper_evaluator.py --predictions chatGPT_response_0.jsonl --gold ./qasper/qasper-test-v0.3.json --text_evidence_only
 python ./qasper/official_qasper_evaluator.py --predictions chatGPT_response_0.jsonl --gold ./qasper/qasper-test-v0.3.json --text_evidence_only
