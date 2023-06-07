@@ -85,7 +85,8 @@ class CustomLLM(LLM):
 
     elif self.chatBot == ChatBotType.PAWAN:
       # system_prompt = "You are a helpful assistant."
-      system_prompt = "You are a model trained on diverse datasets, you have the ability to provide insights on a wide range of topics, including machine learning."
+      # system_prompt = "You are a model trained on diverse datasets, you have the ability to provide insights on a wide range of topics, including machine learning."
+      system_prompt = "You are a scholarly assistant who has expertise in natural language processing and machine learning. You have the ability to provide insights on a wide range of natural language processing topics."
       headers = {
         "Authorization": f"Bearer {PAWAN_API_KEY}",
         "Content-Type": "application/json",
@@ -132,25 +133,28 @@ class CustomLLM(LLM):
       }
     elif taskType == TaskType.EVIDENCE:
       
-      # Find the substring between "Answer:" and "Evidence:"
-      start_index = self.answer.find("Answer:")
-      if start_index == -1:
-          raise ValueError("Answer not found in the input string")
+      explanation = self.answer.lower().split("answer:")[0]
+      answer = self.answer.lower().split("answer:")[1]
 
-      start_index += len("Answer:")
-      end_index = self.answer.find("Evidence:", start_index)
-      if end_index == -1:
-          raise ValueError("Evidence not found in the input string")
+      # # Find the substring between "Answer:" and "Evidence:"
+      # start_index = self.answer.find("Answer:")
+      # if start_index == -1:
+      #     raise ValueError("Answer not found in the input string")
 
-      answer_substring = self.answer[start_index:end_index].strip()
+      # start_index += len("Answer:")
+      # end_index = self.answer.find("Evidence:", start_index)
+      # if end_index == -1:
+      #     raise ValueError("Evidence not found in the input string")
 
-      # Find the substring after "Evidence:"
-      evidence_substring = self.answer[end_index + len("Evidence:"):].strip()
+      # answer_substring = self.answer[start_index:end_index].strip()
+
+      # # Find the substring after "Evidence:"
+      # evidence_substring = self.answer[end_index + len("Evidence:"):].strip()
 
       json_data = {
         "question_id": question_id,
-        "predicted_answer": answer_substring,
-        "predicted_evidence": [evidence_substring],
+        "predicted_answer": answer,
+        "predicted_evidence": [explanation],
       }
     
     with open(path, "a") as f:

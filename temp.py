@@ -36,10 +36,56 @@ def find_substrings(input_string):
 
 
 # Example usage
-input_string = "This is a sample string. Answer: Here is the answer. \nEvidence: Some evidence to support the answer.\n some other shit"
-try:
-    answer, evidence = find_substrings(input_string)
-    print("Answer sub:", answer)
-    print("Evidence sub:", evidence)
-except ValueError as e:
-    print("Error:", str(e))
+# input_string = "This is a sample string. Answer: Here is the answer. \nEvidence: Some evidence to support the answer.\n some other shit"
+# try:
+#     answer, evidence = find_substrings(input_string)
+#     print("Answer sub:", answer)
+#     print("Evidence sub:", evidence)
+# except ValueError as e:
+#     print("Error:", str(e))
+
+
+import requests
+import feedparser
+from bs4 import BeautifulSoup
+
+def scrape_taxonomy():
+    url = "https://arxiv.org/category_taxonomy"
+    r = requests.get(url)
+    soup = BeautifulSoup(r.content, 'html.parser')
+    
+    taxonomy = {}
+    for div in soup.find_all('div', {'class': 'columns divided'}):
+        text = div.find('h4').text
+        # finds the substring after the first ( and before the last )
+        code = text.split(' ')[0]
+        index = text.find('(')
+        if index != -1:
+            category = text[index + 1:-1]
+        else:
+            category = ""
+        taxonomy[code] = category
+    return taxonomy
+
+def get_arxiv_paper_details(arxiv_id, taxonomy):
+    base_url = 'http://export.arxiv.org/api/query?'
+    query = 'id_list={}'.format(arxiv_id)
+    response = requests.get(base_url + query)
+    feed = feedparser.parse(response.content)
+    
+    if len(feed.entries) > 0:
+        entry = feed.entries[0]
+        print("Title: ", entry.title)
+        print("Published: ", entry.published)
+        print("Subjects: ", [taxonomy.get(t['term'], t['term']) for t in entry.tags])
+    else:
+        print("No paper found with the given arXiv id.")
+
+taxonomy = scrape_taxonomy()
+
+# Test the function with an example arXiv id
+# get_arxiv_paper_details('2101.11408', taxonomy)
+
+# test custom
+
+

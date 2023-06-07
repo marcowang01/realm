@@ -58,19 +58,32 @@ I want you to use precise terms and numbers as the answer when possible.
 # If the question is a yes/no question, reply with "Yes." or "No." and nothing else.
 
 # {self.base_prompt}"""
-      return f"""
+        return f"""
 Title: {self.title}
 arXiv ID: {self.arxiv_id}
-Using your knowledge, answer the following question related to this paper:
+Using your knowledge, answer the following question related to this paper by following the instructions below:
 Question: {self.question}
 
-Please answer directly and concisely without providing additional explanations or context and without any preamble or introduction. 
-If the question cannot be answered based on available information or the paper doesn't provide enough evidence, respond with only the word 'Unanswerable'.
-If the paper does not provide the necesary evidence or information related to the question, please respond only with the word 'Unanswerable'.
-If the question can be answered using 'Yes' or 'No', please respond with only the word 'Yes' or 'No'.
-If the question can be answered using a number, please respond with only the number.
-If the question can be asnwered using a term or a list of terms, please respond with only the term or list of terms.
-"""
+Instructions:
+Please answer directly, concisely and precisely without providing additional explanations or context and without any preamble or introduction. 
+If you cannot answer based or the paper doesn't provide enough evidence, respond with only the word 'Unanswerable'. Do not make up an answer.
+If you can answer using 'Yes' or 'No', please respond with only the word 'Yes' or 'No'.
+If you can asnwered using a term or a list of terms, please respond with only the term or list of terms.
+
+Answer: """
+    # the one below is for 1000 test
+#       return f"""
+# Title: {self.title}
+# arXiv ID: {self.arxiv_id}
+# Using your knowledge, answer the following question related to this paper:
+# Question: {self.question}
+
+# Please answer directly and concisely without providing additional explanations or context and without any preamble or introduction. 
+# If the question cannot be answered based on available information or the paper doesn't provide enough evidence, respond with only the word 'Unanswerable'.
+# If the paper does not provide the necesary evidence or information related to the question, please respond only with the word 'Unanswerable'.
+# If the question can be answered using 'Yes' or 'No', please respond with only the word 'Yes' or 'No'.
+# If the question can be asnwered using a term or a list of terms, please respond with only the term or list of terms.
+# """
   def booleanQA(self, chatBotType: ChatBotType):
     """Generate prompts for the boolean (yes/no) answers"""
     if chatBotType == ChatBotType.BARD:
@@ -177,3 +190,65 @@ arxiv URL: https://arxiv.org/pdf/{self.arxiv_id}.pdf
 
 My first yes/no boolean question:
 In the context of the paper? Is the question, "{self.question}" answerable?"""
+
+  def visconde(self, exmaple1, example2):
+    #  For each example, use the documents to create an \"Answer\" and an \"Explanation\" to the \"Question\". Answer \"Unanswerable\" when not enough information is provided in the documents. Pay attention to answer only \"yes\" or \"no\" in boolean questions.\n\n
+    return f"""For each example, use the your own trainig data and knolwedge to create an "Answer" and an "Explanation" to the "Question". Write a one word answer "Answer: Unanswerable" when not enough information is provided in the paper. Pay attention to write a one word answer "Answer: yes" or "Answer: no" for boolean yes/no questions.
+
+Example 1:
+
+[Title]: {exmaple1['title']}
+
+[arXiv ID]: {exmaple1['arxiv_id']}
+
+Question: {exmaple1['question']}
+
+Explanation: {exmaple1['explanation']}
+
+Answer: {exmaple1['answer']}
+
+Example 2:
+
+[Title]: {example2['title']}
+
+[arXiv ID]: {example2['arxiv_id']}
+
+Question: {example2['question']}
+
+Explanation: {example2['explanation']}
+
+Answer: {example2['answer']}
+
+Example 3:
+
+[Title]: Abstractive Summarization for Low Resource Data using Domain Transfer and Data Synthesis
+
+[arXiv ID]: 2002.03407
+
+Question: What is the interannotator agreement for the human evaluation?
+
+Explanation: No Evidence
+  
+Answer: Unanswerable
+
+Example 4:
+
+[Title]: Abstractive Summarization for Low Resource Data using Domain Transfer and Data Synthesis
+
+[arXiv ID]: 2002.03407
+
+Question: Is the template-based model realistic?
+
+Explanation: Finally, while the goal of our template model was to synthesize data, using it for summarization is surprisingly competitive, supporting H6. This encourages us to enhance our template model and explore templates not so tailored to our data.\n\nHuman Evaluation Results. While automated evaluation metrics like ROUGE measure lexical similarity between machine and human summaries, humans can better measure how coherent and readable a summary is. Our evaluation study investigates whether tuning the PG-net model inc
+  
+Answer: Yes
+
+Example 5:
+
+[Title]: {self.title}
+
+[arXiv ID]: {self.arxiv_id}
+
+Question: {self.question}
+
+Explanation: """

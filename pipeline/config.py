@@ -17,6 +17,7 @@ def get_logger(name, level=logging.INFO):
 CACHE_DIR = "/cache"
 
 # Location of chroma persist directory.
+MODAL_DIR = pathlib.Path(CACHE_DIR, "modal")
 CHROMA_DIR = pathlib.Path(CACHE_DIR, "chroma")
 INDEX_DIR = pathlib.Path(CHROMA_DIR, "index")
 S3_KEY = "chroma.zip"

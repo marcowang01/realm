@@ -138,3 +138,59 @@ python ./qasper/qasper_evaluator.py --predictions chatGPT_response_3.jsonl --gol
   "Evidence F1": 0.18416666666666667,
   "Missing predictions": 1393
 }
+
+
+evidence 1000
+{
+  "Answer F1": 0.2224363789643979,
+  "Answer F1 by type": {
+    "extractive": 0.09238982067927559,
+    "abstractive": 0.08916443252690484,
+    "boolean": 0.6038095238095238,
+    "none": 0.6957589285714286
+  },
+  "Answer Precision": 0.2509814285180115,
+  "Answer Precision by type": {
+    "extractive": 0.1315329873323115,
+    "abstractive": 0.12660670449369882,
+    "boolean": 0.5985576923076923,
+    "none": 0.6955422794117647
+  },
+  "Answer Recall": 0.23321927758564892,
+  "Answer Recall by type": {
+    "extractive": 0.10743687190006802,
+    "abstractive": 0.09244655465814469,
+    "boolean": 0.6095238095238096,
+    "none": 0.7054263565891473
+  },
+  "Evidence F1": 0.299,
+  "Missing predictions": 451
+}
+
+
+free form 1000
+{
+  "Answer F1": 0.24632378396640228,
+  "Answer F1 by type": {
+    "extractive": 0.12899834225248502,
+    "abstractive": 0.1431517913724205,
+    "boolean": 0.678082191780822,
+    "none": 0.43872978682060204
+  },
+  "Answer Precision": 0.2685892381643573,
+  "Answer Precision by type": {
+    "extractive": 0.1588396767115848,
+    "abstractive": 0.18188558439940716,
+    "boolean": 0.6736111111111112,
+    "none": 0.43946013368183184
+  },
+  "Answer Recall": 0.282714011438244,
+  "Answer Recall by type": {
+    "extractive": 0.16870088400173863,
+    "abstractive": 0.1662749402515547,
+    "boolean": 0.678082191780822,
+    "none": 0.5315315315315315
+  },
+  "Evidence F1": 0.312,
+  "Missing predictions": 451
+}
