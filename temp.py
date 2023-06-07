@@ -78,13 +78,14 @@ def get_arxiv_paper_details(arxiv_id, taxonomy):
         print("Title: ", entry.title)
         print("Published: ", entry.published)
         print("Subjects: ", [taxonomy.get(t['term'], t['term']) for t in entry.tags])
+        print(entry.keys())
     else:
         print("No paper found with the given arXiv id.")
 
 taxonomy = scrape_taxonomy()
 
 # Test the function with an example arXiv id
-# get_arxiv_paper_details('2101.11408', taxonomy)
+get_arxiv_paper_details('2101.11408', taxonomy)
 
 # test custom
 

@@ -46,7 +46,14 @@ def qasper_construct_examples(dev_dataset, k=5):
     Question: Who designed the Eiffel Tower?
 
     Answer: Gustave Eiffel
-    """
+
+    Example 3:
+
+    [Document 1]: The Venus de Milo is an ancient Greek statue and one of the most famous works of ancient Greek sculpture.
+
+    Question: Who is the Venus de Milo?
+
+    Answer:"""
 
     # title = question_obj["title"]
     question = question_obj["question"]
@@ -67,8 +74,8 @@ def qasper_construct_examples(dev_dataset, k=5):
     
 
 def qasper_construct_prompt(question, documents: List[Document], examples="", k=0):
-  # prompt = 'For each example, use the documents to create to create an "Answer" and an "Explanation" to the "Question". Write a one word answer "Answer: Unanswerable" when not enough information is provided in the documents. Pay attention to write a one word answer "Answer: yes" or "Answer: no" for boolean yes/no questions.'
-  prompt = "For each example, use the documents to create an \"Answer\" and an \"Explanation\" to the \"Question\". Answer \"Unanswerable\" when not enough information is provided in the documents. Pay attention to answer only \"yes\" or \"no\" in boolean questions."
+  prompt = 'For each example, use the documents to create to create an "Answer" and an "Explanation" to the "Question". Write a one word answer "Answer: Unanswerable" when not enough information is provided in the documents. Pay attention to write a one word answer "Answer: yes" or "Answer: no" for boolean yes/no questions.'
+  # prompt = "For each example, use the documents to create an \"Answer\" and an \"Explanation\" to the \"Question\". Answer \"Unanswerable\" when not enough information is provided in the documents. Pay attention to answer only \"yes\" or \"no\" in boolean questions."
   prompt += examples
   prompt += f"\n\nExample {k + 1}:"
   for idx, document in enumerate(documents):
@@ -77,3 +84,17 @@ def qasper_construct_prompt(question, documents: List[Document], examples="", k=
   prompt += "\n\nAnswer:"
 
   return prompt
+
+
+def glide_construct_prompt(question, documents: List[Document]):
+  prompt = "Use the following pieces of context and your own training knowledge to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.\n\n"
+  for idx, document in enumerate(documents):
+    prompt += f"[Context {idx + 1}]: {document.page_content}\n\n"
+
+  prompt += f"Question: {question}\n\nHelpful Answer:"
+  return prompt
+
+# TODO: a
+# find the actual full texts, and then use shorter chunk length?
+# albations? chunk length, few shot, num of docs, 
+# better prompts in general for both

@@ -43,6 +43,10 @@ def token_scores(prediction, ground_truth):
         return (0.0, 0.0, 0.0)
     precision = 1.0 * num_same / len(prediction_tokens)
     recall = 1.0 * num_same / len(ground_truth_tokens)
+    # to fix prompting issues:
+    one_word = ["yes", "no", "unanswerable"]
+    if len(ground_truth_tokens) == 1 and ground_truth_tokens[0] in one_word and recall == 1.0:
+        precision = 1.0
     f1 = (2 * precision * recall) / (precision + recall)
     return (precision, recall, f1)
 
@@ -165,7 +169,8 @@ def evaluate(gold, predicted):
         "Evidence F1": mean(max_evidence_scores["f1"]),
         "Evidence Precision": mean(max_evidence_scores["precision"]),
         "Evidence Recall": mean(max_evidence_scores["recall"]),
-        "Missing predictions": num_missing_predictions
+        "Missing predictions": num_missing_predictions,
+        "Length by type": {key: len(value["f1"]) for key, value in max_answer_by_type.items()},
     }
 
 if __name__ == "__main__":

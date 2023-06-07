@@ -109,7 +109,7 @@ def construct_query(llm, query_text, verbose=False):
   # referenced from "from langchain.retrievers.self_query.base import SelfQueryRetriever"
   # but removed the part that actually runs the query 
   llm_chain = load_query_constructor_chain(
-    llm, config.DOC_DESCRIPTION, config.METADATA_INFO, **chain_kwargs
+    llm, config.QASPER_DOC_DESCRIPTION, config.QASPER_METADATA_INFO, **chain_kwargs
   )
 
   inputs = llm_chain.prep_inputs(query_text)
@@ -151,7 +151,9 @@ def main():
   #   # "answer": "unasnwerable",
   # }
 
-  TRIALS = 3
+  # total number of questions to sample
+  TRIALS = 500
+  START = 0
 
   # create llm instance
   pawan_llm = llm.CustomLLM()
@@ -180,6 +182,9 @@ def main():
     for qa in paper["qas"]:
       if count >= TRIALS:
         break
+      if count <= START:
+        count += 1
+        continue
       
       INPUT_OBJ = {
         "question_id": qa["question_id"],
@@ -199,7 +204,7 @@ def main():
         documents: List[Document] = embed.runQuery.call(new_query, new_kwargs)
         # TODO: do this if we can rank the evidence
         pawan_llm.set_evidence(documents)
-        logger.info(f"Retrieved {len(documents)} documents")
+        # logger.info(f"Retrieved {len(documents)} documents")
 
         # Build a new prompt
         examples = prompts.qasper_construct_examples(dev_dataset, config.K_SHOT)
@@ -208,12 +213,12 @@ def main():
 
         # query LLM
         answer = pawan_llm(prompt)
-        logger.info(f"Final Response: {answer}")
+        # logger.info(f"Final Response: {answer}")
 
         # save to json
         result_path = f"./out/pipeline_result.jsonl"
         pawan_llm.qasper_export_jsonl(INPUT_OBJ["question_id"], result_path)
-        logger.info(f"Saved to {result_path}")
+        logger.info(f"Saved answer {count + 1}/{TRIALS}")
         count += 1
       except Exception as e:
         logger.error(f"Error: {e}")

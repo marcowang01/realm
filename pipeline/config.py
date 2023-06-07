@@ -21,9 +21,10 @@ def get_logger(name, level=logging.INFO):
 CACHE_DIR = "/cache"
 
 # Location of chroma persist directory.
-MODAL_DIR = pathlib.Path(CACHE_DIR, "modal")
-CHROMA_DIR = pathlib.Path(CACHE_DIR, "chroma")
-INDEX_DIR = pathlib.Path(CHROMA_DIR, "index")
+MODAL_DIR = pathlib.Path(CACHE_DIR, "modal") # stores cache of the embedding model
+CHROMA_DIR = pathlib.Path(CACHE_DIR, "chroma") # stores persisted chroma db
+GLIDE_DIR = pathlib.Path(CACHE_DIR, "glide") # this doesnt rly work
+INDEX_DIR = pathlib.Path(CHROMA_DIR, "index") # the actual files containing the embeddings and texts
 S3_KEY = "chroma.zip"
 ZIP_FILE = pathlib.Path(CACHE_DIR, S3_KEY)
 
@@ -40,12 +41,12 @@ PAWAN_API_KEY = "pk-SCfIRSxcfoewLTsUagmpHJMVFwVbPjHDrNeVJAbagnnEjzLD"
 K_DOCS = 6
 
 # number of examples to generate for ICL few shot learning
-K_SHOT = 8
+K_SHOT = 6
 
 """
 Config for evaluation on QASPER
 """
-METADATA_INFO = [
+QASPER_METADATA_INFO = [
     AttributeInfo(
         name="title",
         description="The title of the research paper", 
@@ -62,5 +63,26 @@ METADATA_INFO = [
         type="string", 
     ),
 ]
-DOC_DESCRIPTION = "The full text of the research paper."
+QASPER_DOC_DESCRIPTION = "Excerpts from the full text of the research paper."
 
+"""
+Config for GLIDE demo
+"""
+GLIDE_METADATA_INFO = [
+    AttributeInfo(
+        name="title",
+        description="The title of the research paper",
+        type="string",
+    ),
+    AttributeInfo(
+        name="date",
+        description="The date the paper was published expressed in unix time",
+        type="int",
+    ),
+    AttributeInfo(
+        name="arxiv_id",
+        description="The unique arxiv id of the paper",
+        type="string",
+    ),
+]
+GLIDE_DOC_DESCRIPTION = "Excerpts from the full text of the research paper."
