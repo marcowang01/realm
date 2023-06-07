@@ -15,7 +15,8 @@ from modal import (
     Stub,
     asgi_app,
     gpu,
-    web_endpoint
+    web_endpoint,
+    method
 )
 
 from . import config
@@ -32,8 +33,8 @@ def download_model():
   # Create embeddings
   embeddings = HuggingFaceInstructEmbeddings(
     model_name="hkunlp/instructor-xl",
-    # model_kwargs={"device": "cuda"},
-    model_kwargs={"device": "cpu"},
+    model_kwargs={"device": "cuda"},
+    # model_kwargs={"device": "cpu"},
     cache_folder=str(config.MODAL_DIR),
   )
 
@@ -57,7 +58,7 @@ image = (
     "bitsandbytes",
     "click"
   )
-  .run_function(download_model)
+  # .run_function(download_model)
 )
 
 stub = Stub(
@@ -65,6 +66,28 @@ stub = Stub(
   image=image,
   secrets=[Secret.from_name("pawan-api")]
 )
+
+# for faster cold start times
+@stub.cls(
+  shared_volumes={config.CACHE_DIR: volume}, 
+  # gpu="T4",
+  container_idle_timeout=600,
+  timeout=5000
+)
+class Embbedding:
+  def __enter__(self):
+    from langchain.embeddings import HuggingFaceInstructEmbeddings
+  
+    self.embeddings = HuggingFaceInstructEmbeddings(
+      model_name="hkunlp/instructor-xl",
+      # model_kwargs={"device": "cuda"},
+      model_kwargs={"device": "cpu"},
+      cache_folder=str(config.MODAL_DIR),
+    )
+  
+  @method()
+  def runQuery(self, query_text):
+    return query.run(self.embeddings, query_text)
 
 # handler for running the ingest function
 @stub.function(
@@ -78,13 +101,20 @@ def runIngestion(texts):
   ingest.run(texts)
 
 
-@stub.function(
-    shared_volumes={config.CACHE_DIR: volume}, 
-    gpu="T4",
-    timeout=5000,
-  )
-def runQuery(query_text):
-  return query.run(query_text)
+# @stub.function(
+#     shared_volumes={config.CACHE_DIR: volume}, 
+#     gpu="T4",
+#     container_idle_timeout=600,
+#     timeout=5000,
+#   )
+# def runQuery(query_text):
+#   return query.run(query_text)
+
+# TODO
+# For demo:
+# create a function that will look for new files in a folder every 3 seconds
+# and then have anoher modal function that will send something into the same folder
+# and then after 
   
 
 # run ingest flag to ingest
@@ -98,6 +128,9 @@ def main():
   DO_INGESTION = True
   DO_INGESTION = False
 
+  # ask user for input
+  # query_text = input("Enter query: ")
+
   # if ingest_path is set, run ingestion base on path
   if DO_INGESTION:
     texts = ingest.load_documents(INGEST_PATH)
@@ -105,7 +138,20 @@ def main():
     runIngestion.call(texts)
   else:
     logger.info("Running query")
-    query_text = "What is a seed lexicon?"
-    result = runQuery.call(query_text)
-    logger.info(f"Result:\n{result}")
+    embed = Embbedding()
+    # query_text = "What is a seed lexicon?"
+    # result = embed.runQuery.call(query_text)
+    # logger.info(f"Result:\n{result}")
+
+    query_text = input("Enter query: ")
+    result1 = embed.runQuery.call(query_text)
+    logger.info(f"Result:\n{result1}")
+
+    query_text = input("Enter query: ")
+    result2 = embed.runQuery.call(query_text)
+    logger.info(f"Result:\n{result2}")
+
+    query_text = input("Enter query: ")
+    result3 = embed.runQuery.call(query_text)
+    logger.info(f"Result:\n{result3}")
 

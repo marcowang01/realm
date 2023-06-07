@@ -49,15 +49,20 @@ def token_scores(prediction, ground_truth):
 
 def paragraph_scores(prediction, ground_truth):
     if not ground_truth and not prediction:
-        # The question is unanswerable and the prediction is empty.
+        # The question is unanswerable
         return (1.0, 1.0, 1.0)
-    num_same = len(set(ground_truth).intersection(set(prediction)))
-    if num_same == 0:
-        return (0.0, 0.0, 0.0)
-    precision = num_same / len(prediction)
-    recall = num_same / len(ground_truth) 
-    f1 = (2 * precision * recall) / (precision + recall)
-    return (precision, recall, f1)
+    concat_ground_truth = " ".join(set(ground_truth))
+    # only take the top-k predictions give k-pieces of evidence from ground truth
+    concat_prediction = " ".join(prediction[0:len(set(ground_truth))])
+    return token_scores(concat_prediction, concat_ground_truth)
+
+    # num_same = len(set(ground_truth).intersection(set(prediction)))
+    # if num_same == 0:
+    #     return (0.0, 0.0, 0.0)
+    # precision = num_same / len(prediction)
+    # recall = num_same / len(ground_truth) 
+    # f1 = (2 * precision * recall) / (precision + recall)
+    # return (precision, recall, f1)
 
 
 def get_answers_and_evidence(data, text_evidence_only):
@@ -136,7 +141,8 @@ def evaluate(gold, predicted):
         max_answer_by_type[answer_type]["f1"].append(max_answer_f1) 
 
 
-
+        # TODO: doesn't really make sense even with ranking
+        # TODO: unless we cross reference every permutation with the top evidence
         evidence_scores = [
             paragraph_scores(predicted[question_id]["evidence"], reference["evidence"])
             for reference in gold[question_id]
@@ -147,26 +153,18 @@ def evaluate(gold, predicted):
         max_evidence_scores["f1"].append(max_evidence_f1)
 
 
-        # max_answer_f1s.append(max_answer_f1)
-        # max_answer_f1s_by_type[answer_type].append(max_answer_f1)
-        # evidence_f1s = [
-        #     paragraph_scores(predicted[question_id]["evidence"], reference["evidence"])[0] 
-        #     for reference in gold[question_id]
-        # ]
-        # max_evidence_f1s.append(max(evidence_f1s))
 
     mean = lambda x: sum(x) / len(x) if x else 0.0
     return {
-        # "Answer F1": mean(max_answer_f1s),
         "Answer F1": mean(max_answer_scores["f1"]),
-        # "Answer F1 by type": {key: mean(value) for key, value in max_answer_f1s_by_type.items()},
         "Answer F1 by type": {key: mean(value["f1"]) for key, value in max_answer_by_type.items()},
         "Answer Precision": mean(max_answer_scores["precision"]),
         "Answer Precision by type": {key: mean(value["precision"]) for key, value in max_answer_by_type.items()},
         "Answer Recall": mean(max_answer_scores["recall"]),
         "Answer Recall by type": {key: mean(value["recall"]) for key, value in max_answer_by_type.items()},
-        # "Evidence F1": mean(max_evidence_f1s),
         "Evidence F1": mean(max_evidence_scores["f1"]),
+        "Evidence Precision": mean(max_evidence_scores["precision"]),
+        "Evidence Recall": mean(max_evidence_scores["recall"]),
         "Missing predictions": num_missing_predictions
     }
 
@@ -198,8 +196,7 @@ if __name__ == "__main__":
         prediction_data = json.loads(line)
         predicted_answers_and_evidence[prediction_data["question_id"]] = {
             "answer": prediction_data["predicted_answer"],
-            # "evidence": prediction_data["predicted_evidence"]
-            "evidence": []
+            "evidence": prediction_data["predicted_evidence"]
         }
     evaluation_output = evaluate(gold_answers_and_evidence, predicted_answers_and_evidence)
     print(json.dumps(evaluation_output, indent=2))

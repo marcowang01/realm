@@ -85,8 +85,8 @@ class CustomLLM(LLM):
 
     elif self.chatBot == ChatBotType.PAWAN:
       # system_prompt = "You are a helpful assistant."
-      # system_prompt = "You are a model trained on diverse datasets, you have the ability to provide insights on a wide range of topics, including machine learning."
-      system_prompt = "You are a scholarly assistant who has expertise in natural language processing and machine learning. You have the ability to provide insights on a wide range of natural language processing topics."
+      system_prompt = "You are a model trained on diverse datasets, you have the ability to provide insights on a wide range of topics, including machine learning."
+      # system_prompt = "You are a scholarly assistant who has expertise in natural language processing and machine learning. You have the ability to provide insights on a wide range of natural language processing topics."
       headers = {
         "Authorization": f"Bearer {PAWAN_API_KEY}",
         "Content-Type": "application/json",
