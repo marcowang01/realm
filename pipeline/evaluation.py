@@ -152,7 +152,7 @@ def main():
   # }
 
   # total number of questions to sample
-  TRIALS = 500
+  TRIALS = 300
   START = 0
 
   # create llm instance
@@ -204,16 +204,16 @@ def main():
         documents: List[Document] = embed.runQuery.call(new_query, new_kwargs)
         # TODO: do this if we can rank the evidence
         pawan_llm.set_evidence(documents)
-        # logger.info(f"Retrieved {len(documents)} documents")
+        logger.info(f"Retrieved {len(documents)} documents")
 
         # Build a new prompt
-        examples = prompts.qasper_construct_examples(dev_dataset, config.K_SHOT)
-        prompt = prompts.qasper_construct_prompt(INPUT_OBJ["question"], documents, examples, config.K_SHOT)
-        # logger.info(f"Final Prompt:\n\n {prompt}")
+        # examples = prompts.qasper_construct_examples(dev_dataset, config.K_SHOT)
+        prompt = prompts.qasper_construct_prompt(INPUT_OBJ["question"], documents, "", config.K_SHOT)
+        logger.info(f"Final Prompt:\n\n {prompt}")
 
         # query LLM
         answer = pawan_llm(prompt)
-        # logger.info(f"Final Response: {answer}")
+        logger.info(f"Final Response: {answer}")
 
         # save to json
         result_path = f"./out/pipeline_result.jsonl"

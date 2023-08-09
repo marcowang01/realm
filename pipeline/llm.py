@@ -49,7 +49,7 @@ class CustomLLM(LLM):
     }
 
     response = requests.post(config.PAWAN_API_URL, headers=headers, json=payload)
-    if response.status_code != 200:
+    if response.status_code != 200: 
       raise Exception(f"PawanGPT ERROR: {response.json()}")
     answer = response.json()['choices'][0]['message']['content']
 

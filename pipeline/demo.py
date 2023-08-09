@@ -118,9 +118,9 @@ def construct_query(llm, query_text, verbose=False):
   )
 
   if verbose:
-    new_query_string = f"\n    Query: {structured_query.query}"
-    new_query_string += "\n    Filters:\n"
+    new_query_string = f"Structured query: {structured_query.query}"
     if structured_query.filter is not None:
+      new_query_string += "\n    Filters:\n"
       for f in structured_query.filter:
         new_query_string += f"        {f}\n"
     demo_print(new_query_string)
@@ -165,30 +165,44 @@ def main():
   logger.info("begin evaluation...")
 
   def generate_answer(question):
+    print("\n1. Get question from user...")
+    demo_print(f"Question: {query_text}")
     # Preprocess the input into a structured query
+    print(f"2. Construct structured query using ChatGPT LLM proxy...")
     new_query, new_kwargs = construct_query(pawan_llm, question, verbose=True)
     
     # pass structured query to modal embedding
+    print(f"3. Retrieving documents from vectorDB...")
     documents: List[Document] = embed.runQuery.call(new_query, new_kwargs)
-    demo_print(f"\nRetrieved {len(documents)} documents from vectorDB\n")
+    demo_print(f"Retrieval: Retrieved {len(documents)} documents from vectorDB")
     
     # build a new prompt
+    print(f"4. Concatenate everything into a big prompt...")
     prompt = prompts.glide_construct_prompt(question, documents)
+    # demo_print(f"Final Propmt:\n\n{prompts.glide_constrct_demo_prompt(question, documents)}\n")
     # logger.info(f"Final Prompt:\n\n {prompt}")
 
     # run the prompt
+    print(f"5. Pass big prompt into ChatGPT LLM proxy...")
     answer = pawan_llm(prompt)
     # logger.info(f"Final Response: {answer}")
-    demo_print(f"\n{answer}\n")
+    demo_print(f"Final answer:\n\n{answer}\n")
 
   # the main demo loop
   query_text = ""
   while True:
-    query_text = input("Enter a question: ") #  list out different components that make up the U-net architecture for diffusion models
-    if query_text == "exit":
-      break
-    demo_print(f"{query_text}")
-    generate_answer(query_text)
+    try:
+      query_text = input("Enter a question: ") #  list out different components that make up the U-net architecture for diffusion models
+      if query_text == "exit":
+        break
+      generate_answer(query_text)
+    except Exception as e:
+      logger.error(traceback.format_exc())
+      continue
+
+# list out different components that make up the U-net architecture for diffusion models
+# Why does the GLIDE model need attention layers if it already uses text-conditioned guided diffusion?
+# What are some potential reasons that classifier free guidance work so much better than classifier guided diffusion?
 
   # query_text = input("Enter a question: ") # Why does the GLIDE model need attention layers if it already uses text-conditioned guided diffusion?
   # generate_answer(query_text)

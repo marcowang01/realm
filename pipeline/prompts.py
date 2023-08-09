@@ -25,6 +25,7 @@ def qasper_extract_answer_evidence(answers):
   return res
 
 def qasper_construct_examples(dev_dataset, k=5):
+  # returns string that has all the examples
   import random
 
   rand_keys = random.sample(list(dev_dataset.keys()), k)
@@ -47,7 +48,7 @@ def qasper_construct_examples(dev_dataset, k=5):
 
     Answer: Gustave Eiffel
 
-    Example 3:
+    Example 2:
 
     [Document 1]: The Venus de Milo is an ancient Greek statue and one of the most famous works of ancient Greek sculpture.
 
@@ -87,11 +88,20 @@ def qasper_construct_prompt(question, documents: List[Document], examples="", k=
 
 
 def glide_construct_prompt(question, documents: List[Document]):
-  prompt = "Use the following pieces of context and your own training knowledge to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.\n\n"
+  prompt = "Use the following pieces of context and your own training knowledge to answer the question at the end concisely. If you don't know the answer, just say that you don't know, don't try to make up an answer.\n\n"
   for idx, document in enumerate(documents):
     prompt += f"[Context {idx + 1}]: {document.page_content}\n\n"
 
   prompt += f"Question: {question}\n\nHelpful Answer:"
+  return prompt
+
+def glide_constrct_demo_prompt(question, documents: List[Document]):
+  prompt = "Use the following pieces of context and your own training knowledge to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.\n\n"
+  for idx, document in enumerate(documents):
+    prompt += f"[Context {idx + 1}]: {document.page_content[0:100]}...\n\n"
+
+  prompt += f"Question: {question}\n\nHelpful Answer:"
+
   return prompt
 
 # TODO: a
